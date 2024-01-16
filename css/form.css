@@ -1,0 +1,46 @@
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="text"],
+textarea,
+input[type="email"] {
+    border: none;
+    background-color: var(--beige);
+    border-bottom: 2px solid var(--black);
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-bottom: 2px solid var(--green);
+}
+
+::placeholder {
+    color: var(--green);
+    text-align: left;
+}
+
+
+.formulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}

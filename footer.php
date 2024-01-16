@@ -27,8 +27,6 @@
                 <a href="#"><p class="p2">Charpente Zen ©2023</p></a>
                 <p class="p2"> - </p>
                 <a href="#"><p class="p2">Mentions légales</p></a>
-                <p class="p2 dash"> - </p>
-                <a href="#"><p class="p2">Confidentialité</p></a>
             </div>
         </footer>
     </body>

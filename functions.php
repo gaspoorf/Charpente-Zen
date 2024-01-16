@@ -54,7 +54,12 @@
 
         // VAR CSS
         wp_enqueue_style('var-style', get_template_directory_uri() . '/css/var.css');
+
+        // PAGE HOME CSS
         wp_enqueue_style('home-style', get_template_directory_uri() . '/css/page-home.css');
+
+        // FORM CSS
+        wp_enqueue_style('form-style', get_template_directory_uri() . '/css/form.css');
         
         // ANIMATIONS CSS
         wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
