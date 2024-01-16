@@ -1,0 +1,29 @@
+
+.text-cms{
+    max-width: 800px;
+}
+
+.text-cms2{
+    max-width: 500px;
+}
+
+.img-rond{
+    border-radius: 10px;
+}
+
+
+/* Gérer position droite et gauche */
+.right .video-cms{
+    order: 2;
+}
+.right .text-cms2 {
+    order: 1;
+}
+
+
+.left .video-cms{
+    order: 1;
+}
+.left .text-cms2 {
+    order: 2;
+}

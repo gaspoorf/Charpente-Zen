@@ -7,6 +7,9 @@
     add_image_size('pictures-realisations', 400, 500, ['center', 'center']);
     add_image_size('pictures-review', 106, 19, true);
     add_image_size('pictures-about', 400, 385, ['center', 'center']);
+    
+    add_image_size('pictures-bw', 400, 385, false);
+
 
     add_image_size('pictures-realisations-CMS', 380, 270, ['center', 'center']);
 
@@ -58,6 +61,9 @@
         // PAGE HOME CSS
         wp_enqueue_style('home-style', get_template_directory_uri() . '/css/page-home.css');
 
+        // PAGE CMS CSS
+        wp_enqueue_style('cms-style', get_template_directory_uri() . '/css/cms.css');
+
         // FORM CSS
         wp_enqueue_style('form-style', get_template_directory_uri() . '/css/form.css');
         
@@ -69,6 +75,9 @@
         // SLIDER JS
         wp_enqueue_script('home-script', get_template_directory_uri() . '/js/burger.js',array(),'1.0.0', array('strategy' => 'defer'));
         
+        // NAV JS
+        wp_enqueue_script('nav-script', get_template_directory_uri() . '/js/nav.js',array(),'1.0.0', array('strategy' => 'defer'));
+
         // ANIMATIONS CSS
         wp_enqueue_style('aos-script', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array('strategy' => 'defer'));
     }

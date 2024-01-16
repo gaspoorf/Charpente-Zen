@@ -1,9 +1,12 @@
-<?php get_header() ?>
-<?php
+<?php 
+  /* Template Name: Page */ 
+  get_header();
+
 
 
 $flexible_contents = get_field('content');
 
+echo '<main class="marg2">';
 foreach ($flexible_contents as $content) {
   $template_name = $content['acf_fc_layout'];
   $template_file = sprintf('%s/layouts/%s.php', get_template_directory(), $template_name);
@@ -16,8 +19,7 @@ foreach ($flexible_contents as $content) {
   }
 
 }
+echo '</main>';
 
+ get_footer() ?>
 
-?>
-
-<?php get_footer() ?>

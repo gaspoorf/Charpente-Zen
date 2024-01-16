@@ -22,11 +22,11 @@
 ?>
 
 <!-- INTRO -->
-<section class="white align top-CMS">
-    <div class="background-b-w">
+<section class="white  center gap1">
+    <div class="">
         <img src="<?php echo get_template_directory_uri(); ?>/img/maison.png" alt="escaliers blancs" class="stairs-white">
     </div>
-    <div class="left-CMS">
+    <div class="">
         <div>
             <div class="pad1">
                 <h2><?php echo ($wood_title);?></h2>

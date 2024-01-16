@@ -16,7 +16,7 @@
                 
                 
                 <?php if ($video_url) : ?>
-                    <div class="video-container">
+                    <div class="video-container" id="background-picture">
                         <iframe width="560" height="315" src="<?php echo esc_url($video_url); ?>" frameborder="0" allowfullscreen></iframe>
                     </div>
                 <?php endif; ?>
@@ -34,7 +34,7 @@
                 <span></span>
             </div>
             <nav>
-                <div class="menu-container" id="menu">
+                <div class="menu-container green" id="menu">
                     <div class="menu-background">
                         <?php wp_nav_menu(array('menu' => 'primary_menu')); ?>
                     </div>
@@ -43,6 +43,8 @@
             </nav> 
         </div>
     </header>
+
+ 
 
    
     
