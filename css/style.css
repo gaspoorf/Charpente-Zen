@@ -12,8 +12,14 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 80px;
     flex-wrap: wrap;
+}
+
+.gap1{
+    gap: 80px;
+}
+.gap2{
+    gap: 30px;
 }
 
 .simple-center{
@@ -39,13 +45,16 @@ body{
     padding-bottom: 20px;
 }
 .top-CMS{
-    padding-top: 0px
+    padding-top: 0px;
+    flex-wrap: wrap;
 }
 
 .left-CMS{
     text-align: left;
     display: flex;
     align-items: center;
+    max-width: 500px;
+    z-index: 2;
 }
 
 
@@ -60,5 +69,19 @@ body{
 
 
 .stairs-white{
-    width: 600px;
+    display: flex;
+    
+    
+}
+
+
+.background-b-w img{
+    z-index: 1;
+    margin-left: -70px;
+    left: 0;
+    max-width: 600px;
+}
+
+iframe{
+    z-index: 999;
 }

@@ -5,11 +5,12 @@
 
 
 body{
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2, .center-text{
-    font-family: 'Kalam', sans-serif;
+    /* font-family: 'Kalam', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{

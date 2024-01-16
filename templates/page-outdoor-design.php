@@ -23,7 +23,9 @@
 
 <!-- INTRO -->
 <section class="white align top-CMS">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/stairs-white.png" alt="escaliers blancs" class="stairs-white">
+    <div class="background-b-w">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/stairs-white.png" alt="escaliers blancs" class="stairs-white">
+    </div>
     <div class="left-CMS">
         <div>
             <div class="pad1">
@@ -35,24 +37,34 @@
                 <h3><?php echo ($outdoor_secondary_title);?></h3>
                 <p><?php echo ($outdoor_secondary_text);?></p>
             </div>
-            
-            
         </div>
 
     </div>  
 </section>
 
 <!-- REALISATIONS -->
-<section class="beige">
+<section class="beige pad3" >
     <div class="simple-center">
         <h3><?php echo ($outdoor_section_title);?></h3>
         <h2><?php echo ($outdor_title_realisations);?></h2>
-        <div class="center">
-            <img loading="lazy" src="<?php echo($outdoor_picture_1['sizes']['pictures-about']); ?>" height="<?php echo($outdoor_picture_1['sizes']['pictures-about-height']); ?>" width="<?php echo($outdoor_picture_1['sizes']['pictures-about-width']); ?>" alt="<?php echo($outdoor_picture_1['alt']); ?>">
-            <img loading="lazy" src="<?php echo($outdoor_picture_2['sizes']['pictures-about']); ?>" height="<?php echo($outdoor_picture_2['sizes']['pictures-about-height']); ?>" width="<?php echo($outdoor_picture_2['sizes']['pictures-about-width']); ?>" alt="<?php echo($outdoor_picture_2['alt']); ?>">
-            <img loading="lazy" src="<?php echo($outdoor_picture_3['sizes']['pictures-about']); ?>" height="<?php echo($outdoor_picture_3['sizes']['pictures-about-height']); ?>" width="<?php echo($outdoor_picture_3['sizes']['pictures-about-width']); ?>" alt="<?php echo($outdoor_picture_3['alt']); ?>">
+
+        <div class="slider">
+            <div class="cards">
+                
+                <div class="card">
+                    <img loading="lazy" src="<?php echo($outdoor_picture_1['sizes']['pictures-realisations-CMS']); ?>" height="<?php echo($outdoor_picture_1['sizes']['pictures-realisations-CMS']); ?>" width="<?php echo($outdoor_picture_1['sizes']['pictures-realisations-CMS']); ?>" alt="<?php echo($outdoor_picture_1['alt']); ?>">
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="<?php echo($outdoor_picture_2['sizes']['pictures-realisations-CMS']); ?>" height="<?php echo($outdoor_picture_2['sizes']['pictures-realisations-CMS']); ?>" width="<?php echo($outdoor_picture_2['sizes']['pictures-realisations-CMS']); ?>" alt="<?php echo($outdoor_picture_2['alt']); ?>">
+                </div>
+                <div class="card">
+                    <img loading="lazy" src="<?php echo($outdoor_picture_3['sizes']['pictures-realisations-CMS']); ?>" height="<?php echo($outdoor_picture_3['sizes']['pictures-realisations-CMS']); ?>" width="<?php echo($outdoor_picture_3['sizes']['pictures-realisations-CMS']); ?>" alt="<?php echo($outdoor_picture_3['alt']); ?>">
+                </div>
+            </div>
         </div>
-        <button class="button button-green"><span><span>En voir plus</span></span></button>
+        <div class="pad2">
+            <button class="button button-green"><span><span>En voir plus</span></span></button>
+        </div>
     </div>
 </section>
 

@@ -8,7 +8,24 @@
     add_image_size('pictures-review', 106, 19, true);
     add_image_size('pictures-about', 400, 385, ['center', 'center']);
 
+    add_image_size('pictures-realisations-CMS', 380, 270, ['center', 'center']);
+
     // add_get_logo('') modifier logo depuis apparance sur wdp
+
+
+
+    // FONCTION POUR PAGE CMS
+    function p($args){
+        echo '<pre>';
+            var_dump($args);
+        echo '</pre>';
+    }
+    
+    // STOP TOUT APRES P
+    function d($args){
+        p($args);
+        die();
+    }
 
     
     

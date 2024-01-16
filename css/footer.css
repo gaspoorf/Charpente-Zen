@@ -116,6 +116,10 @@ footer .button{
         text-align: center;
     }
 
+    .footer-top {
+        gap: 50px;
+    }
+
     .center{
         text-align: center;
     }

@@ -76,7 +76,7 @@
 
 <!-- ACCUEIL -->
 <section class="beige pad3" id="home">
-    <div class="center">
+    <div class="center gap1">
         <div class="catch">
             <h1 data-aos="fade-up"><?php echo ($catch);?></h1>
             <p data-aos="fade-up"><?php echo ($catch2);?></p>
@@ -121,7 +121,7 @@
         </div>
     </div>
     <div class="slider">
-        <div class="cards">
+        <div class="cards"> 
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('amenagement-exterieur'))); ?>"> 
                 <div class="card prestations" data-aos="zoom-in">
                     <h4 class="prestations-text">Aménagements extérieurs</h4>
@@ -194,7 +194,7 @@
             <h2 data-aos="fade-up"><?php echo ($partners_title);?></h2>
         </div>
     </div>
-    <div class="center">
+    <div class="center gap1">
         <a href="<?php echo ($partners_link_1) ?>" data-aos="fade-right"><img loading="lazy" src="<?php echo($partners_logo_1['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
         <a href="<?php echo ($partners_link_2) ?>" data-aos="fade-right"><img loading="lazy" src="<?php echo($partners_logo_2['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
         <a href="<?php echo ($partners_link_3) ?>" data-aos="fade-right"><img loading="lazy" src="<?php echo($partners_logo_3['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
