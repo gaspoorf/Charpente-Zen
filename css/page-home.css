@@ -1,0 +1,160 @@
+.catch{
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+}
+
+
+.section-second{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.section-first-content{
+    flex: 1;
+    max-width: 500px;
+}
+
+.section-first-content1{
+    flex: 1;
+    max-width: 500px;
+}
+.presentation-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: auto;
+}
+
+
+
+
+
+/* PRESTATIONS CARTES */
+.slider {
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; /* a modifier pour responsive de center a start */
+    white-space: nowrap; /* Empêche le retour à la ligne des cartes */
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 30px;
+    overflow-x: scroll;
+}
+
+/* A MODIFIER */
+@media screen and (max-width: 768px) {
+    .cards {
+        justify-content: start; /* a modifier pour responsive de center a start */
+    }
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+
+    width: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    margin: 0 15px;
+}
+
+.prestations{
+    cursor: pointer;
+}
+
+.prestations:hover .black-card{
+    opacity: 60%;
+}
+
+.card img {
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prestations:hover img {
+    transform: scale(1.1);
+}
+
+.prestations-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    z-index: 3;
+}
+
+.black-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 30%;
+    z-index: 2;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+
+.section-first-content1 img{
+    border-radius: 10px;
+}
+
+
+/* AVIS */
+
+.review{
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+.review-name {
+    color: var(--black);
+    font-size: 12px;
+    text-align: start;
+}
+
+.review-text {
+    max-width: 100%; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal;
+    text-align: start;
+    color: var(--black);
+}
+
+
+.space{
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+
+.center img{
+    cursor: pointer;
+}
+
+

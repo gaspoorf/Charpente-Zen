@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.simple-center{
+   text-align: center;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+}
+
+.pad3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.pad1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pad2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.top-CMS{
+    padding-top: 0px
+}
+
+.left-CMS{
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.beige{
+    background-color: var(--beige);
+}
+
+.white{
+    background-color: var(--white);
+}
+
+
+.stairs-white{
+    width: 600px;
+}

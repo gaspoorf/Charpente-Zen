@@ -1,0 +1,58 @@
+/* POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*KALAM REGULAR*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+h2, .center-text{
+    font-family: 'Kalam', sans-serif;
+}
+
+h1{
+    font-size: 20px;
+    color: var(--dark-green);
+    margin: 20px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 25px;
+    color: var(--dark-green);
+    margin-top: 10px;
+    margin-bottom:  20px;
+}
+
+h3{
+    font-size: 15px;
+    color: var(--green);
+}
+
+h4{
+    font-size: 22px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+p{
+    font-size: 15px;
+    color: var(--dark-green);
+    line-height: 23px;
+}
+
+.p2{
+    font-size: 15px;
+    color: var(--beige);
+}
+
+.footer-precision{
+    font-size: 22px;
+}
+
+.main-text{
+    line-height: 50px;
+    font-weight: bold;
+}
