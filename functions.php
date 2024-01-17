@@ -89,6 +89,11 @@
     }
     
 
+    function get_youtube_video_id($url) {
+        parse_str(parse_url($url, PHP_URL_QUERY), $params);
+        return isset($params['v']) ? $params['v'] : false;
+    }
+
 
     //MENU
     function custom_register_nav_menu(){

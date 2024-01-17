@@ -7,10 +7,7 @@ $video_id = get_youtube_video_id($video_url);
 
 
 // Fonction pour extraire l'ID de la vidéo YouTube à partir de l'URL
-function get_youtube_video_id($url) {
-    parse_str(parse_url($url, PHP_URL_QUERY), $params);
-    return isset($params['v']) ? $params['v'] : false;
-}
+
 ?>
 
 <div class="center gap2 pad3 <?php echo $content['text_video_choice']; ?>">

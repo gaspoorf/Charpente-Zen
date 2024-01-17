@@ -1,5 +1,5 @@
 var prevScrollpos = window.pageYOffset;
-var mainImage = document.getElementById("background-picture");
+var mainImage = document.getElementById("background-video");
 
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;

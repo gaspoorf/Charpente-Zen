@@ -4,23 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <?php wp_head() ?>
-        
-
     </head>
     <body>
-    <?php $video_url = get_field('video_url'); ?> 
+    <?php $video_url = get_field('video_url'); 
+
+    $video_id = get_youtube_video_id($video_url);
+
+   
+    ?>
+
     <header>
         <div class="header-section"> 
             <div>
                 <p class="center-text main-text">La construction bois par la confiance et la bonne humeur</p>
-                
-                
-                <?php if ($video_url) : ?>
-                    <div class="video-container" id="background-picture">
-                        <iframe width="560" height="315" src="<?php echo esc_url($video_url); ?>" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                <?php endif; ?>
-
+                <?php if ($video_id) {
+                    echo '<iframe id="background-video" width="100%" height="100%" src="https://www.youtube.com/embed/' . $video_id . '?modestbranding=1&autohide=1&showinfo=0&controls=0&autoplay=1&mute=1&loop=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>';
+                    } else {
+                        echo '<p>URL de vidéo YouTube non valide.</p>';
+                    }
+                ?>
                 
                 <div class="background-image shadow"></div>
                 <a href="#home"><div class="green-arrow">
