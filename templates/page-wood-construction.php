@@ -12,6 +12,7 @@
     $wood_text = get_field('wood_text');
     $wood_secondary_title = get_field('wood_secondary_title');
     $wood_secondary_text = get_field('wood_secondary_text');
+    $wood_deco = get_field('wood_deco');
 
     // REALISATIONS
     $wood_section_title = get_field('wood_section_title');
@@ -53,33 +54,32 @@ $random_images = array_rand($all_images, 3);
 
 
 
-<main class="pad-top">
-    <!-- INTRO -->
-    <section class="white center gap1">
-        <div class="">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/maison.png" alt="escaliers blancs" class="stairs-white">
+<main class="pad-topM">
+
+    <section class="white center">
+        <div class="background-b-w">
+            <img loading="lazy" class="pad1" src="<?php echo esc_url($wood_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($wood_deco['sizes']['pictures-b-w']); ?>" width="<?php echo esc_attr($wood_deco['sizes']['pictures-b-w']); ?>" alt="<?php echo esc_attr($wood_deco['alt']); ?>">
         </div>
-        <div class="">
+        <div class="left-CMS">
             <div>
-                <div class="pad1">
-                    <h2><?php echo ($wood_title);?></h2>
-                    <h3><?php echo ($wood_catch);?></h3>
-                    <p><?php echo ($wood_text);?></p>
+                <div class="pad3">
+                    <h1 class="h1-2 pad2"><?php echo ($wood_title);?></h1>
+                    <h3 class="pad1"><?php echo ($wood_catch);?></h3>
+                    <p class="p3"><?php echo ($wood_text);?></p>
                 </div>
-                <div class="pad1">
-                    <h3><?php echo ($wood_secondary_title);?></h3>
-                    <p><?php echo ($wood_secondary_text);?></p>
+                <div class="pad3">
+                    <h3 class="pad1"><?php echo ($wood_secondary_title);?></h3>
+                    <p class="p3"><?php echo ($wood_secondary_text);?></p>
                 </div>
             </div>
-
         </div>  
     </section>
 
 
 
     <!-- REALISATIONS -->
-    <section class="beige pad3" >
-        <div class="simple-center">
+    <section class="beige pad3 pad-bot" >
+        <div class="simple-center RED">
             <h3><?php echo ($wood_section_title);?></h3>
             <h2><?php echo ($wood_title_realisations);?></h2>
 

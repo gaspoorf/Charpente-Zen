@@ -16,7 +16,7 @@
     $video_id = get_youtube_video_id($about_video_url);
 ?>
 <main class="pad-top">
-        <!-- INTRO -->
+
     <section class="white pad3">
         <div class="simple-center">
             <h3><?php echo ($about_section_title);?></h3>

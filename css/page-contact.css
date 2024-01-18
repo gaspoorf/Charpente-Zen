@@ -1,3 +1,15 @@
+.contact .background-b-w{
+    order: 1;
+}
+.contact .left-CMS{
+    order: 2;
+}
+
+
+
+
+
+/* ---------- FORM ---------- */
 form {
     width: 400px;
     margin: 0 auto;
@@ -36,11 +48,42 @@ input[type="email"]:focus {
     text-align: left;
 }
 
-
 .formulaire{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap:100px;
+}
+
+
+
+
+
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 768px) {
+    .contact .left-CMS{
+        order: 1;
+        padding-left: 40px;
+        padding-right: 40px;
+
+    }
+    
+    .contact .background-b-w{
+        order: 2;
+    }
+
+    form{
+        width:300px;
+    }
+
+    .contact img{
+        max-width: 350px;
+        overflow: hidden;
+    }
+
+    .contact .gap1{
+        gap: 20px;
+    }
 }

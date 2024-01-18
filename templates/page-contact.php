@@ -24,42 +24,43 @@
     $contact_image_bottom = get_field('contact_image_bottom');
 ?>
 
-<main class="pad-top">
-    <!-- INTRO -->
+<main class="pad-topM contact">
+
     <section class="white center gap1">
-        <div>
+        <div class="background-b-w">
             <a href="https://www.google.com/maps/place/<?php echo ($contact_adress)?>" target="_blank">
-                <img loading="lazy" src="<?php echo($contact_map['sizes']['pictures-realisations']); ?>" height="<?php echo($contact_map['sizes']['pictures-realisations-height']); ?>" width="<?php echo($contact_map['sizes']['pictures-realisations-width']); ?>" alt="<?php echo($contact_map['alt']); ?>">
+                <img loading="lazy" class="pad1" src="<?php echo esc_url($contact_map['sizes']['map']); ?>" height="<?php echo esc_attr($contact_map['sizes']['map']); ?>" width="<?php echo esc_attr($contact_map['sizes']['map']); ?>" alt="<?php echo esc_attr($contact_map['alt']); ?>">
             </a>
         </div>
-        <div>
+        <div class="left-CMS">
             <div>
-                <div class="pad1">
-                    <h2><?php echo ($contact_title);?></h2>
-                    <h3><?php echo ($contact_location);?></h3>
+                <div class="pad3">
+                    <h1 class="h1-2 pad2"><?php echo ($contact_title);?></h1>
+                    <h3 class="pad1"><?php echo ($contact_location);?></h3>
                 </div>
-                <div class="pad1">
-                    <h3>ME CONTACTER</h3>
-                    <p><?php echo ($contact_text);?></p>
+                <div class="pad2">
+                    <h3 class="pad1">ME CONTACTER</h3>
+                    <p class="p3"><?php echo ($contact_text);?></p>
                 </div>
-                <div class="pad1">
-                    <h3>ADRESSE</h3>
+                <div class="pad2">
+                    <h3 class="pad1">ADRESSE</h3>
                     <a href="https://www.google.com/maps/place/<?php echo ($contact_adress)?>" target="_blank">
-                        <p><?php echo ($contact_adress);?></p>
+                        <p class="p3"><?php echo ($contact_adress);?></p>
                     </a>
-                </div>
-                <div class="pad1">
-                    <h3>TÉLÉPHONE</h3>
-                    <a href="tel:+<?php echo ($contact_phone) ?>" target="_blank">
-                        <p><?php echo ($contact_phone);?></p>
+                    <h3 class="pad1">TÉLÉPHONE</h3>
+                    <a href="tel:<?php echo ($contact_phone)?>" target="_blank">
+                        <p class="p3"><?php echo ($contact_phone);?></p>
                     </a>
                 </div>
             </div>
         </div>  
     </section>
 
+
+
+
     <!-- REALISATIONS -->
-    <section class="beige pad3">
+    <section class="beige pad3 pad-bot">
         <div class="center gap1">
             <div>
                 <h2><?php echo ($contact_title_form);?></h2>
@@ -80,9 +81,10 @@
                     <button name="submit" class="button button-green"><span><span>Envoyer</span></span></button>
                 </form>
             </div>
-            <div class="simple-center">
-                <img loading="lazy" src="<?php echo($contact_image_bottom['sizes']['pictures-realisations']); ?>" height="" width="<?php echo($contact_image_bottom['sizes']['pictures-realisations-width']); ?>" alt="<?php echo($contact_image_bottom['alt']); ?>">
+            <div class="background-b-w">
+                <img loading="lazy" class="pad1" src="<?php echo esc_url($contact_image_bottom['sizes']['map']); ?>" height="<?php echo esc_attr($contact_image_bottom['sizes']['map']); ?>" width="<?php echo esc_attr($contact_image_bottom['sizes']['map']); ?>" alt="<?php echo esc_attr($contact_image_bottom['alt']); ?>">
             </div>
+            
         </div>
     </section>
 </main>

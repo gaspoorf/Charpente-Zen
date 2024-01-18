@@ -24,14 +24,6 @@
                     
 
 
-
-
-
-
-
-
-
-
                     <?php if ($video_id) { ?>
                         <div class="hero" id="background-video">
                             <div id="youtubeEmbed" class="hero_video" data-video-id="<?php echo ($video_id);?>"></div>
@@ -48,19 +40,6 @@
                     <?php } ?>
 
                 
-                
-
-
-
-
-
-
-
-
-
-
-
-
                     <div class="background-image shadow"></div>
                     <a href="#home">
                         <div class="green-arrow">
@@ -79,6 +58,7 @@
                 <div id="burger-menu">
                     <span></span>
                 </div>
+                <div class="back-green"></div>
                 <nav>
                     <?php if (!is_page('accueil')) : ?>
                         <?php echo '<div class="menu-container green" id="menu2">'; ?>

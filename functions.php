@@ -7,8 +7,21 @@
     add_image_size('pictures-realisations', 350, 450, ['center', 'center']);
     add_image_size('pictures-review', 106, 19, true);
     add_image_size('pictures-about', 400, 385, ['center', 'center']);
+
+    add_image_size('map', 400, 0, false);
+
     
-    add_image_size('pictures-bw', 400, 385, false);
+    
+    //SIZE IMAGE DECO B&W
+    add_image_size('pictures-b-w', 650, 0, false);
+
+    //SIZE 500
+    add_image_size('400', 400, 0, false);
+
+    //SIZE 400
+    add_image_size('200', 200, 0, false);
+
+    
 
 
     add_image_size('pictures-realisations-CMS', 380, 270, ['center', 'center']);
@@ -77,6 +90,9 @@
         // PAGE HOME CSS
         wp_enqueue_style('home-style', get_template_directory_uri() . '/css/page-home.css');
 
+        // PAGE CONTACT CSS
+        wp_enqueue_style('contact-style', get_template_directory_uri() . '/css/page-contact.css');
+
         // PAGE CMS CSS
         wp_enqueue_style('cms-style', get_template_directory_uri() . '/css/cms.css');
 
@@ -85,12 +101,15 @@
         
         // ANIMATIONS CSS
         wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
+        
    
         
 
         // BURGER JS
         wp_enqueue_script('home-script', get_template_directory_uri() . '/js/burger.js',array(),'1.0.0', array('strategy' => 'defer'));
         
+        
+
         // NAV JS
         if (is_page('accueil')) {
             wp_enqueue_script('nav-script', get_template_directory_uri() . '/js/nav.js',array(),'1.0.0', array('strategy' => 'defer'));

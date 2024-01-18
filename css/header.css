@@ -43,22 +43,6 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .logo img {
     width: 70px;
     cursor: pointer;
@@ -85,7 +69,6 @@ html{
 .green{
     background-color: var(--dark-green);
 }
-
 
 
 
@@ -220,10 +203,21 @@ html{
 }
 
 
+@media (max-width: 1080px) {
+
+    .back-green{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background-color: var(--dark-green);
+    }
+    
+
+   
 
 
-
-@media (max-width: 768px) {
 
     /* fond vert du menu nav accueuil */
     #menu #menu-menu-header {
@@ -336,6 +330,13 @@ html{
         padding-top: 100px;
         background: rgba(0, 0, 0, 0.5);
     }
+
+}
+
+
+@media (max-width: 768px) {
+
+    
   
    
 

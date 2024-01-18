@@ -12,6 +12,7 @@ body{
 .center{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -39,13 +40,15 @@ body{
 .align{
     display: flex;
     justify-content: center;
+    /* position: relative;
+    transform: translate(-300px, 0px); */
 }
 
-.pad3{
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
 
+
+
+
+/* ---------- PADDINGS ---------- */
 .pad1{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -54,33 +57,59 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.top-CMS{
-    padding-top: 0px;
-    flex-wrap: wrap;
+.pad3{
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
-
+.pad4{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.pad4M{
+    padding-top: 0px;
+}
 .pad-top{
     padding-top: 100px;
 }
-
+.pad-topM{
+    padding-top: 100px;
+}
+.pad-bot{
+    padding-bottom: 70px;
+}
+.pad-top1{
+    padding-top: 50px;
+}
 .pad-top2{
     padding-top: 200px;
     padding-left: 10px;
     padding-right: 10px;
 }
+.top-CMS{
+    padding-top: 0px;
+    flex-wrap: wrap;
+}
 
+
+/* ---------- POSITIONS 3 PAGES ---------- */
 .left-CMS{
     text-align: left;
     display: flex;
     align-items: center;
-    max-width: 500px;
+    max-width: 600px;
     z-index: 2;
 }
+
 
 b{
     font-weight: bolder;
 }
 
+
+
+
+
+/* ---------- COLORS ---------- */
 .beige{
     background-color: var(--beige);
 }
@@ -89,20 +118,14 @@ b{
     background-color: var(--white);
 }
 
-
-.stairs-white{
-    display: flex;
-    
-    
+.red{
+    border: 1px solid red;
 }
 
-
-.background-b-w img{
-    z-index: 1;
-    margin-left: -70px;
-    left: 0;
-    max-width: 600px;
+.blue{
+    border: 1px solid blue;
 }
+
 
 
 
@@ -118,6 +141,10 @@ b{
     border-radius: 10px;
 }
 
+
+
+
+/* ---------- MEDIA QUERIES ---------- */
 @media (max-width: 768px) {
     .wrap{
         flex-wrap: nowrap;
@@ -128,7 +155,7 @@ b{
         aspect-ratio: 16 / 9;
     }
 
-    .pad-top{
+    .pad-topM{
         padding-top: 0px;
     }
     

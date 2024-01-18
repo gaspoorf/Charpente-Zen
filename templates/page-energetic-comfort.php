@@ -11,6 +11,7 @@
     $comfort_text = get_field('comfort_text');
     $comfort_secondary_title = get_field('comfort_secondary_title');
     $comfort_secondary_text = get_field('comfort_secondary_text');
+    $comfort_deco = get_field('comfort_deco');
 
     // REALISATIONS
     $comfort_section_title = get_field('comfort_section_title');
@@ -53,30 +54,33 @@
 ?>
 
 
-<main class="pad-top">
-    <!-- INTRO -->
-    <section class="white align top-CMS">
+<main class="pad-topM">
+
+    <section class="white align">
         <div class="background-b-w">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/porte.png" alt="escaliers blancs" class="stairs-white">
+        <img loading="lazy" src="<?php echo esc_url($comfort_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w']); ?>" width="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w']); ?>" alt="<?php echo esc_attr($comfort_deco['alt']); ?>">
         </div>
         <div class="left-CMS">
             <div>
-                <div class="pad1">
-                    <h2><?php echo ($comfort_title);?></h2>
-                    <h3><?php echo ($comfort_catch);?></h3>
-                    <p><?php echo ($comfort_text);?></p>
+                <div class="pad3">
+                    <h1 class="h1-2 pad2"><?php echo ($comfort_title);?></h1>
+                    <h3 class="pad1"><?php echo ($comfort_catch);?></h3>
+                    <p class="p3"><?php echo ($comfort_text);?></p>
                 </div>
-                <div class="pad1">
-                    <h3><?php echo ($comfort_secondary_title);?></h3>
-                    <p><?php echo ($comfort_secondary_text);?></p>
+                <div class="pad3">
+                    <h3 class="pad1"><?php echo ($comfort_secondary_title);?></h3>
+                    <p class="p3"><?php echo ($comfort_secondary_text);?></p>
                 </div>
             </div>
-
         </div>  
     </section>
 
+
+
+
+
     <!-- REALISATIONS -->
-    <section class="beige pad3" >
+    <section class="beige pad3 pad-bot" >
         <div class="simple-center">
             <h3><?php echo ($comfort_section_title);?></h3>
             <h2><?php echo ($comfort_title_realisations);?></h2>
