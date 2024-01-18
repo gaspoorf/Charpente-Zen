@@ -30,16 +30,17 @@ onYouTubeIframeAPIReady = function () {
       end: endSeconds
     },
     events: {
-      onReady: function (e) {
-        e.target.mute();
-        e.target.playVideo();
+      onReady: function (event) {
+        event.target.mute();
+        event.target.playVideo();
+        onPlayerReady(event); // Appel à la fonction onPlayerReady ici
       },
-      onStateChange: function (e) {
-        if (e.data === YT.PlayerState.PLAYING) {
+      onStateChange: function (event) {
+        if (event.data === YT.PlayerState.PLAYING) {
           document.getElementById("youtubeEmbed").classList.add("loaded");
         }
 
-        if (e.data === YT.PlayerState.ENDED) {
+        if (event.data === YT.PlayerState.ENDED) {
           // Loop from starting point
           player.seekTo(startSeconds);
         }
@@ -47,3 +48,17 @@ onYouTubeIframeAPIReady = function () {
     }
   });
 };
+
+
+
+// Déplacer la fonction onPlayerReady ici
+function onPlayerReady(event) {
+  // La vidéo est prête, vous pouvez masquer l'overlay ici avec un délai de 2 secondes
+  var loadingOverlay = document.querySelector('.loading-overlay');
+  if (loadingOverlay) {
+    // Utilisation de setTimeout pour ajouter un délai de 2000 millisecondes (2 secondes)
+    setTimeout(function () {
+      loadingOverlay.style.display = 'none';
+    }, 2000);
+  }
+}

@@ -108,6 +108,7 @@
             <h3 data-aos="fade-up"><?php echo ($prestations_section_title);?></h3>
             <h2 data-aos="fade-up"><?php echo ($prestations_title);?></h2>
         </div>
+        
     </div>
     <div class="slider">
         <div class="cards"> 
