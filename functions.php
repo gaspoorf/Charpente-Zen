@@ -4,7 +4,7 @@
     add_image_size('house', 400, 400, ['center', 'center']);
     add_image_size('image-presentation', 450, 380, ['center', 'center']);
 
-    add_image_size('pictures-realisations', 400, 500, ['center', 'center']);
+    add_image_size('pictures-realisations', 350, 450, ['center', 'center']);
     add_image_size('pictures-review', 106, 19, true);
     add_image_size('pictures-about', 400, 385, ['center', 'center']);
     
@@ -30,7 +30,23 @@
         die();
     }
 
+    /* Autoriser les fichiers SVG */
+    function wpc_mime_types($mimes) {
+        $mimes['svg'] = 'image/svg+xml';
+        return $mimes;
+    }
+    add_filter('upload_mimes', 'wpc_mime_types');
+
     
+
+
+      add_filter('script_loader_tag', function ($tag, $handle, $src) {
+    
+        if ( $handle === 'aosInit-script' ) {
+           $tag = str_replace('<script ', '<script type="module" ', $tag);
+        }
+        return $tag;
+     }, 10, 3);
     
     //CSS
     
@@ -72,14 +88,30 @@
    
         
 
-        // SLIDER JS
+        // BURGER JS
         wp_enqueue_script('home-script', get_template_directory_uri() . '/js/burger.js',array(),'1.0.0', array('strategy' => 'defer'));
         
         // NAV JS
-        wp_enqueue_script('nav-script', get_template_directory_uri() . '/js/nav.js',array(),'1.0.0', array('strategy' => 'defer'));
+        if (is_page('accueil')) {
+            wp_enqueue_script('nav-script', get_template_directory_uri() . '/js/nav.js',array(),'1.0.0', array('strategy' => 'defer'));
+            wp_enqueue_script('video-script', get_template_directory_uri() . '/js/video.js',array(),'1.0.0', array('strategy' => 'defer'));
+            wp_enqueue_style('video-style', get_template_directory_uri() . '/css/video.css');
+        }
+        // NAV JS
+        if (!is_page('accueil')) {
+            wp_enqueue_script('nav2-script', get_template_directory_uri() . '/js/nav2.js',array(),'1.0.0', array('strategy' => 'defer'));
+            
+        }
+        
 
-        // ANIMATIONS CSS
-        wp_enqueue_style('aos-script', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array('strategy' => 'defer'));
+        // button contact nav JS
+        wp_enqueue_script('button-script', get_template_directory_uri() . '/js/button-contact.js',array(),'1.0.0', array('strategy' => 'defer'));
+
+        // button contact nav JS
+        wp_enqueue_script('btn-script', get_template_directory_uri() . '/js/button.js',array(),'1.0.0', array('strategy' => 'defer'));
+
+        // AOS INIT js
+        wp_enqueue_script('aosInit-script', get_template_directory_uri() . '/js/aos.js',array(),'1.0.0', array('strategy' => 'defer'));
     }
     
 
@@ -98,10 +130,19 @@
     //MENU
     function custom_register_nav_menu(){
         register_nav_menus( array(
-            'primary_menu' => 'Menu principal',
+            'menu-header' => 'Menu header',
         ) );
+
+        register_nav_menus( array(
+            'menu-footer' => 'Menu footer',
+
+        ) );
+        
     }
     add_action( 'after_setup_theme', 'custom_register_nav_menu', 0 );
+
+    
+
 
     
     // Fonction pour ajouter une classe aux liens du menu

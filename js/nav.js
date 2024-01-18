@@ -4,6 +4,7 @@ var mainImage = document.getElementById("background-video");
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
+  //HOME PAGE
   if (currentScrollPos < mainImage.clientHeight) {
     document.getElementById("menu-menu-header").classList.remove("green");
   } else {
@@ -16,6 +17,7 @@ window.onscroll = function() {
       document.getElementById("menu-menu-header").style.top = "-150px";
       document.getElementById("menu-menu-header").classList.remove("green");
   }
+
 
   prevScrollpos = currentScrollPos;
 }

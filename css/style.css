@@ -1,7 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+a{
+    text-decoration: none;
+}
 body{
     background-color: var(--white);
     overflow-x: hidden;
@@ -21,6 +23,10 @@ body{
     gap: 30px;
 }
 
+.marg1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .marg2{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -37,7 +43,7 @@ body{
 
 .pad3{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .pad1{
@@ -53,6 +59,16 @@ body{
     flex-wrap: wrap;
 }
 
+.pad-top{
+    padding-top: 100px;
+}
+
+.pad-top2{
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .left-CMS{
     text-align: left;
     display: flex;
@@ -61,7 +77,9 @@ body{
     z-index: 2;
 }
 
-
+b{
+    font-weight: bolder;
+}
 
 .beige{
     background-color: var(--beige);
@@ -86,6 +104,145 @@ body{
     max-width: 600px;
 }
 
-iframe{
-    z-index: 999;
+
+
+
+.wrap{
+    flex-wrap: wrap;
 }
+
+
+.video iframe { 
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .wrap{
+        flex-wrap: nowrap;
+    }
+
+    .video iframe { 
+        width: 70%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .pad-top{
+        padding-top: 0px;
+    }
+    
+    .pad-top2{
+        padding-top: 0px;
+    }
+
+}
+
+
+
+
+/* PRESTATIONS CARTES */
+.slider {
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; /* a modifier pour responsive de center a start */
+    white-space: nowrap; /* Empêche le retour à la ligne des cartes */
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 30px;
+    overflow-x: scroll;
+}
+
+/* A MODIFIER */
+@media screen and (max-width: 768px) {
+    .cards {
+        justify-content: start; /* a modifier pour responsive de center a start */
+    }
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+
+    width: 300px;
+    max-height: 400px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    margin: 0 15px;
+}
+
+
+.prestations{
+    cursor: pointer;
+}
+
+.prestations:hover .black-card{
+    opacity: 60%;
+}
+
+.card img {
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prestations:hover img {
+    transform: scale(1.1);
+}
+
+.prestations-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    z-index: 3;
+}
+
+.black-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 30%;
+    z-index: 2;
+    transition: opacity 0.2s ease-in-out;
+}
+
+h4 {
+    white-space: pre-wrap;
+    line-height: 30px;
+}
+
+.section-first-content1 img{
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.card {
+    border-radius: 10px;
+}
+
+
+
+
+
+

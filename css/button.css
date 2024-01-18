@@ -6,7 +6,7 @@
 	pointer-events: auto;
 	cursor: pointer;
 	background: var(--beige);
-  color: var(--green);
+  	color: var(--green);
 	border: none;
 	padding: 10px 20px;
 	margin: 0;
@@ -37,7 +37,7 @@
 }
 
 .button-green span {
-  color: var(--white);
+  	color: var(--white);
 	display: block;
 	position: relative;
 }
@@ -52,7 +52,7 @@
 
 .button-green:hover > span > span {
 	animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
-  color: var(--green);
+  	color: var(--green);
 }
 
 @keyframes MoveUpInitial {
@@ -76,6 +76,8 @@
 	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 	transform-origin: 100% 50%;
 }
+
+
 
 .button-green:hover::before {
 	transform: scale3d(0,1,1);

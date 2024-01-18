@@ -65,24 +65,29 @@ html{
     cursor: pointer;
 }
 
-.menu {
+
+.header-menu ul {
+    position: fixed;
+    top: 0;
+    left: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
     padding-inline-start: 0;
-    top: 0;
     width: 100%;
     padding: 20px;
-    z-index: 999;
-    position: fixed;
+    z-index: 6;
+
     transition: all 0.5s ease-in-out;
 }
 
 .green{
     background-color: var(--dark-green);
 }
+
+
 
 
 
@@ -188,6 +193,11 @@ html{
 }
 
 
+#menu2 #menu-menu-header {
+    background-color: var(--dark-green);
+}
+
+
 @keyframes bounceUpDown {
     0% {
       transform: translateY(0);
@@ -198,33 +208,41 @@ html{
 }
 
 
+#background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
 
 
 @media (max-width: 768px) {
-    .menu{
+    .header-menu ul{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 300px;
+        height: 100vh;
         text-align: center;
-        padding-top: 150px;
-        gap: 50px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         font-size: 20px;
     }
 
-    .menu-background{
+   
+   
+    /* .menu-background{
         position: fixed;
         height: 100vh;
         width: 100%;
         top: 0;
         left: 0;
         background-color: var(--dark-green);
-    }
+    } */
 
 
-    #menu-menu-header li:first-child {
+    /* #menu-menu-header li:first-child {
         display: none;
-    }
+    } */
     
     #burger-menu {
         cursor: pointer;
@@ -233,13 +251,13 @@ html{
         margin: 50px;
         overflow: visible;
         position: relative;
-        z-index: 6;
+        z-index: 999;
     }
     
     #burger-menu span,
     #burger-menu span:before,
     #burger-menu span:after {
-        background: #fff;
+        background: orange;
         display: block;
         height: 2px;
         opacity: 1;
@@ -290,46 +308,25 @@ html{
         width: 0;
     }
     
-    #menu {
+    #menu, #menu2 {
         z-index: 5;
         position: fixed;
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s ease-in-out;
     }
+
     
-    #menu.overlay {
+    #menu.overlay, #menu2.overlay {
         visibility: visible;
         opacity: 1;
         padding-top: 100px;
         background: rgba(0, 0, 0, 0.5);
     }
   
+   
+
 }
 
-/* 
 
 
-#navbar {
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
-  }
-  
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  } */

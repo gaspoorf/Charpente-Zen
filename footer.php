@@ -1,10 +1,19 @@
+<?php 
+$contact_page_id = get_page_by_path('contact')->ID; // Récupérer l'ID de la page contact
+$contact_adress = get_field('contact_adress', $contact_page_id);
+$contact_phone = get_field('contact_phone', $contact_page_id);
+?> 
+        
         <footer>
             <div class="center footer-top">
                 <div class="footer-column1">
                     <p class="p2 footer-precision">Adresse</p>
-                    <p class="p2">73100 Verthemex</p>
-                    <p class="p2">+33 7 60 40 46 38</p>
-                    <button class="button button-green"><span><span>Me contacter</span></span></button>
+                    <a href="https://www.google.com/maps/place/<?php echo ($contact_adress);?>" target="_blank"><p class="p2"><?php echo ($contact_adress);?></p></a>
+                    <a href="tel:+<?php echo ($contact_phone) ?>" target="_blank"><p class="p2"><?php echo ($contact_phone);?></p></a>
+                    
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>">
+                        <button class="button button-green"><span><span>Me contacter</span></span></button>
+                    </a>
                 </div>
                 <div class="footer-column2">
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('accueil'))); ?>">
@@ -13,11 +22,9 @@
                 </div>
                 <div class="footer-column3">
                     <p class="p2 footer-precision">Plan du site</p>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('amenagement-exterieur'))); ?>"><p class="p2">Aménagements extérieurs</p></a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('constructions-bois'))); ?>"><p class="p2">Constructions bois</p></a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('confort-energetique'))); ?>"><p class="p2">Confort énergétique</p></a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('realisations'))); ?>"><p class="p2">Réalisations</p></a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('a-propos'))); ?>"><p class="p2">À propos</p></a>
+                    
+                    <?php wp_nav_menu(array('theme_location' => 'menu-footer', 'container_class' => 'footer-menu')); ?>
+                    
                 </div>
             </div>
             
