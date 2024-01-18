@@ -149,7 +149,7 @@ html{
     text-align: center;
     font-size: 40px;
     color: white;
-    z-index: 5;
+    z-index: 4;
 }
 
 
@@ -167,14 +167,14 @@ html{
     transition: all 0.3s ease;
     animation: bounceUpDown 1s infinite alternate;
     margin-left: 10px;
-    z-index: 12;
+    z-index: 5;
 }
 
 .circle{
     width: 40px;
     top: 77%;
     opacity: 1;
-    z-index: 10;
+    z-index: 4;
 }
 
 
@@ -198,6 +198,7 @@ html{
 }
 
 
+
 @keyframes bounceUpDown {
     0% {
       transform: translateY(0);
@@ -217,6 +218,12 @@ html{
 
 
 @media (max-width: 768px) {
+
+    /* fond vert du menu nav accueuil */
+    #menu #menu-menu-header {
+        background-color: var(--dark-green);
+    }
+    
     .header-menu ul{
         display: flex;
         flex-direction: column;

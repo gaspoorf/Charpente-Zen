@@ -35,23 +35,22 @@
                             echo '<p>URL de vidéo YouTube non valide.</p>';
                         }
                     ?>
+                    
+                    <div class="background-image shadow"></div>
+                    <a href="#home">
+                        <div class="green-arrow">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/circle.svg" alt="cercle" class="logo-down circle">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-white.svg" alt="fleche" class="logo-down arrow ">
+                        </div>
+                    </a>
+                </div>
 
                     
 
-            <?php endif ; ?>  
+        <?php endif ; ?>  
 
 
-
-
-
-
-
-                    <div class="background-image shadow"></div>
-                    <a href="#home"><div class="green-arrow">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/circle.svg" alt="cercle" class="logo-down circle">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-white.svg" alt="fleche" class="logo-down arrow ">
-                    </div></a>
-                </div>
+                    
                 <div id="burger-menu">
                     <span></span>
                 </div>
