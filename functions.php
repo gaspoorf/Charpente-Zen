@@ -11,6 +11,7 @@
     add_image_size('map', 400, 0, false);
 
 
+    add_image_size('pictures-about', 800, 700, ['center', 'center']);
     //SIZE REALISATIONS (CARRE)
     add_image_size('pictures-square', 600, 600, ['center', 'center']);
 

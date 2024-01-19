@@ -48,9 +48,21 @@
         }
         wp_reset_postdata();
     }
+    
+    $image_number = count($all_images);
 
-    // Sélectionner trois images aléatoires
-    $random_images = array_rand($all_images, 3);
+    if ($image_number >= 3) {
+        $image_number = 3;
+        $random_images = array_rand($all_images, $image_number);
+    }elseif ($image_number == 0){
+        $random_images = false;
+    }elseif ($image_number == 2){
+        $random_images = array_rand($all_images, $image_number);
+    }else{
+        $random_images = $all_images;
+    }
+
+    
 ?>
 
 
@@ -87,12 +99,23 @@
 
             <div class="slider">
                 <div class="cards">
-                    <?php foreach ($random_images as $random_index) : ?>
-                        <?php $random_image = $all_images[$random_index]; ?>
-                        <div class="card">
-                            <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-realisations-CMS']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-realisations-CMS-height']); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-realisations-CMS-width']); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
-                        </div>
-                    <?php endforeach; ?>
+                    
+                <?php if ($image_number == 1){?>
+                    <div class="card">
+                    <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
+                    </div>
+                <?php }else {
+
+                    if ($random_images){?>
+                        <?php foreach ($random_images as $random_index) : ?>
+                            <?php $random_image = $all_images[$random_index]; ?>
+                            <div class="card">
+                                <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
+                            </div>
+                    <?php endforeach; 
+                    }
+
+                } ?>
                 </div>
             </div>
             <div class="pad2">

@@ -66,10 +66,10 @@
     <img src="<?php echo get_template_directory_uri(); ?>./img/littlewoodBG.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
     <div class="center gap1">
         <div class="catch">
-            <h1  ><?php echo ($catch);?></h1>
-            <p  ><?php echo ($catch2);?></p>
+            <h1><?php echo ($catch);?></h1>
+            <p><?php echo ($catch2);?></p>
         </div>
-    </div>  
+    </div>
 </section>
 <section class="white pad3 pad-bot">
 <img src="<?php echo get_template_directory_uri(); ?>./img/woodBGwhite.png" alt="Photo de charpente" class="wood-bg-2 bw t2">
@@ -93,7 +93,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>./img/woodBGleft.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
     <div class="section-second">
         <div class="section-first-content1 simple-center" >
-            <img loading="lazy" class="pictures-about" src="<?php echo($about_image['sizes']['pictures-square']); ?>" height="<?php echo($presentation_image['sizes']['pictures-square-height']); ?>" width="<?php echo($about_image['sizes']['pictures-square-width']); ?>" alt="<?php echo($about_image['alt']); ?>">
+            <img loading="lazy" class="pad1 " src="<?php echo esc_url($about_image['sizes']['pictures-about']); ?>" height="<?php echo esc_attr($about_image['sizes']['pictures-about-height'] / 2); ?>" width="<?php echo esc_attr($about_image['sizes']['pictures-about-width'] / 2); ?>" alt="<?php echo esc_attr($about_image['alt']); ?>">
         </div>
         <div class="section-first-content simple-center" >
             <h3  ><?php echo ($about_section_title);?></h3>
