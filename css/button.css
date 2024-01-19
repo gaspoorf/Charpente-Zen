@@ -14,7 +14,8 @@
 	font-size: inherit;
 	position: relative;
 	display: inline-block;
-  border-radius: 5px;
+  	border-radius: 5px;
+	z-index: 10;
 }
 
 .button::before,

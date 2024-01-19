@@ -2,6 +2,7 @@
     text-align: center;
     width: 60%;
     padding: 10px;
+    z-index: 10;
 }
 
 
@@ -12,18 +13,32 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
+    
+    
 
 }
 
 .section-first-content{
     flex: 1;
     max-width: 500px;
+    z-index: 10;
 }
+
+.section-first-content1 img, 
+.section-first-content img{
+    max-width: 100%;
+    height: auto;
+
+    overflow: hidden;
+}
+
+
 
 .section-first-content1{
     flex: 1;
     max-width: 500px;
+    z-index: 10;
 }
 .presentation-text{
     margin-top: 30px;
@@ -75,4 +90,111 @@
 .stars{
     height: 19px;
     width: 106px;
+}
+
+
+
+
+/*---------- DECORATION --------- */
+.wood-bg-1{
+    position: absolute;
+    z-index: 0;
+    left: -100px;
+    top:0;
+
+}
+.t1{
+    width: 100px;
+}
+.t2{
+    width: 250px;
+}
+
+.t3{
+    width: 180px;
+}
+
+.t4{
+    width: 300px;
+}
+
+.t6{
+    width: 1000px;
+}
+
+.wood-bg-2{
+    position: absolute;
+    z-index: 0;
+    right: -100px;
+    top:0;
+}
+
+.wood-bg-3{
+    position: absolute;
+    z-index: 0;
+    right: -50px;
+    top: 150px;
+}
+
+.wood-bg-4{
+    position: absolute;
+    z-index: 0;
+    right: -600px;
+    bottom: -250px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .bw{
+        opacity: 0.5;
+    }
+    
+    .catch{
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .section-first-content1, 
+    .section-first-content {
+        min-width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
+    .section-first-content1 img, 
+    .section-first-content img{
+        max-width: 100%;
+        height: auto;
+
+        overflow: hidden;
+    }
+
+    .slider{
+        padding-left: 20px;
+    }
+    
+    .wood-bg-4{
+        position: absolute;
+        z-index: 0;
+        right: -650px;
+        bottom: -500px;
+    }
+
+
+
+
+
+
+
+
+    
+  
+    
+   
 }

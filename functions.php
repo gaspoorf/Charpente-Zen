@@ -10,16 +10,24 @@
 
     add_image_size('map', 400, 0, false);
 
-    
+
+    //SIZE REALISATIONS (CARRE)
+    add_image_size('pictures-square', 600, 600, ['center', 'center']);
+
+    //REPLACE
+    add_image_size('replace', 1920, 1080, ['center', 'center']);
     
     //SIZE IMAGE DECO B&W
-    add_image_size('pictures-b-w', 650, 0, false);
+    add_image_size('pictures-b-w', 1300, 0, false);
 
     //SIZE 500
     add_image_size('400', 400, 0, false);
 
     //SIZE 400
     add_image_size('200', 200, 0, false);
+
+    //LOGO MENU
+    add_image_size('logo', 70, 0, false);
 
     
 
@@ -92,12 +100,14 @@
 
         // PAGE CONTACT CSS
         wp_enqueue_style('contact-style', get_template_directory_uri() . '/css/page-contact.css');
+        
+        // PAGE ABOUT CSS
+        wp_enqueue_style('about-style', get_template_directory_uri() . '/css/page-about.css');
 
         // PAGE CMS CSS
         wp_enqueue_style('cms-style', get_template_directory_uri() . '/css/cms.css');
 
-        // FORM CSS
-        wp_enqueue_style('form-style', get_template_directory_uri() . '/css/form.css');
+        
         
         // ANIMATIONS CSS
         wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');

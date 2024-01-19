@@ -90,6 +90,13 @@ body{
     flex-wrap: wrap;
 }
 
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 400px;
+    text-align: left;
+}
 
 /* ---------- POSITIONS 3 PAGES ---------- */
 .left-CMS{
@@ -112,10 +119,12 @@ b{
 /* ---------- COLORS ---------- */
 .beige{
     background-color: var(--beige);
+    position: relative;
 }
 
 .white{
     background-color: var(--white);
+    position: relative;
 }
 
 .red{
@@ -151,13 +160,10 @@ b{
     }
 
     .video iframe { 
-        width: 70%;
+        width: 90%;
         aspect-ratio: 16 / 9;
     }
 
-    .pad-topM{
-        padding-top: 0px;
-    }
     
     .pad-top2{
         padding-top: 0px;
@@ -165,8 +171,13 @@ b{
 
 }
 
+@media (max-width: 1080px) {
 
+    .pad-topM{
+        padding-top: 50px;
+    }
 
+}
 
 /* PRESTATIONS CARTES */
 .slider {
@@ -207,6 +218,7 @@ b{
     overflow: hidden;
     scroll-snap-align: start;
     margin: 0 15px;
+    z-index: 4;
 }
 
 
@@ -263,10 +275,10 @@ h4 {
 
 
 
-
-.card {
-    border-radius: 10px;
-}
+/* 
+.card img{
+    border-radius: 20px;
+} */
 
 
 

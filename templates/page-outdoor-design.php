@@ -56,7 +56,7 @@
 
         <section class="white center pad4">
             <div class="background-b-w">
-            <img loading="lazy" class="pad1" src="<?php echo esc_url($outdoor_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($outdoor_deco['sizes']['pictures-b-w']); ?>" width="<?php echo esc_attr($outdoor_deco['sizes']['pictures-b-w']); ?>" alt="<?php echo esc_attr($outdoor_deco['alt']); ?>">
+                <img loading="lazy" class="pad1" src="<?php echo esc_url($outdoor_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($outdoor_deco['sizes']['pictures-b-w-height'] / 2); ?>" width="<?php echo esc_attr($outdoor_deco['sizes']['pictures-b-w-width'] / 2); ?>" alt="<?php echo esc_attr($outdoor_deco['alt']); ?>">
             </div>
             <div class="left-CMS">
                 <div>

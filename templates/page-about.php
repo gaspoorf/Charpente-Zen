@@ -15,26 +15,29 @@
     $about_video_url = get_field('about_video_url');
     $video_id = get_youtube_video_id($about_video_url);
 ?>
-<main class="pad-top">
+<main class="pad-topM">
 
-    <section class="white pad3">
+    <section class="white pad3 about">
         <div class="simple-center">
-            <h3><?php echo ($about_section_title);?></h3>
-            <h2><?php echo ($about_title);?></h2>
+            <h3 class="pad1"><?php echo ($about_section_title);?></h3>
+            <h1 class="h1-2 pad2"><?php echo ($about_title);?></h1>
         </div>
-        <div class="pad3 center">
-            <div class="pad1 left-CMS">
-                <p class="p3"><?php echo ($about_text);?></p></div>
-            <div class="pad1">
-                <img loading="lazy" src="<?php echo($about_image['sizes']['image-presentation']); ?>" height="<?php echo($about_image['sizes']['image-presentation-height']); ?>" width="<?php echo($about_image['sizes']['image-presentation-width']); ?>" alt="<?php echo($about_image['alt']); ?>">
+        <div class="pad3 center gap1">
+            <div class="left-CMS pad2">
+                <p class="p3">
+                    <?php echo ($about_text);?>
+                </p>
+            </div>
+            <div class="pad1 rond">
+                <img loading="lazy" src="<?php echo($about_image['sizes']['map']); ?>" height="<?php echo($about_image['sizes']['map-height']); ?>" width="<?php echo($about_image['sizes']['map-width']); ?>" alt="<?php echo($about_image['alt']); ?>">
             </div>
         </div>
     </section>
 
 
-    <section class="beige pad3">
+    <section class="beige pad3 pad-bot">
         <div class="simple-center">
-            <h3><?php echo ($about_section_2_title);?></h3>
+            <h3 class="pad1"><?php echo ($about_section_2_title);?></h3>
             <h2><?php echo ($about_title_2);?></h2>
         </div>
         <div class="simple-center video">

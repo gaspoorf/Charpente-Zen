@@ -61,7 +61,7 @@ html{
     padding-inline-start: 0;
     width: 100%;
     padding: 20px;
-    z-index: 6;
+    z-index: 20;
 
     transition: all 0.5s ease-in-out;
 }
@@ -113,9 +113,6 @@ html{
     transform-origin: 0% 50%;
     transform: scaleX(1);
 }
-
-
-
 
 
 
@@ -264,7 +261,7 @@ html{
     #burger-menu span,
     #burger-menu span:before,
     #burger-menu span:after {
-        background: orange;
+        background: var(--white);
         display: block;
         height: 2px;
         opacity: 1;

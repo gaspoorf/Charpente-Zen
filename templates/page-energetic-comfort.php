@@ -58,7 +58,7 @@
 
     <section class="white align">
         <div class="background-b-w">
-        <img loading="lazy" src="<?php echo esc_url($comfort_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w']); ?>" width="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w']); ?>" alt="<?php echo esc_attr($comfort_deco['alt']); ?>">
+        <img loading="lazy" class="pad1" src="<?php echo esc_url($comfort_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w-height'] / 2); ?>" width="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w-width'] / 2); ?>" alt="<?php echo esc_attr($comfort_deco['alt']); ?>">
         </div>
         <div class="left-CMS">
             <div>
