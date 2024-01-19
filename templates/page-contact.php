@@ -82,7 +82,7 @@
                 </form>
             </div>
             <div class="background-b-w">
-                <img loading="lazy" class="pad1" src="<?php echo esc_url($contact_image_bottom['sizes']['map']); ?>" height="<?php echo esc_attr($contact_image_bottom['sizes']['map']); ?>" width="<?php echo esc_attr($contact_image_bottom['sizes']['map']); ?>" alt="<?php echo esc_attr($contact_image_bottom['alt']); ?>">
+                <img loading="lazy" class="pad1" src="<?php echo esc_url($contact_image_bottom['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($contact_image_bottom['sizes']['pictures-b-w-height'] / 3); ?>" width="<?php echo esc_attr($contact_image_bottom['sizes']['pictures-b-w-width'] / 3); ?>" alt="<?php echo esc_attr($contact_image_bottom['alt']); ?>">
             </div>
             
         </div>

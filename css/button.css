@@ -37,6 +37,14 @@
 	color: var(--white);
 }
 
+.menu-item .button-green{
+	background-color: var(--green);
+}
+
+.button-green-contact {
+	background-color: var(--green);
+}
+
 .button-green span {
   	color: var(--white);
 	display: block;

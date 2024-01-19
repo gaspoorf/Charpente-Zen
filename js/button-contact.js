@@ -10,16 +10,16 @@ function applyChanges() {
       lastMenuItem.classList.add('button');
       lastMenuItem.classList.add('button-green');
 
-      var outerSpan = document.createElement('span');
-      var innerSpan = document.createElement('span');
+      // var outerSpan = document.createElement('span');
+      // var innerSpan = document.createElement('span');
 
-      innerSpan.innerText = lastMenuItem.innerText;
+      // innerSpan.innerText = lastMenuItem.innerText;
 
-      outerSpan.appendChild(innerSpan);
+      // outerSpan.appendChild(innerSpan);
 
-      lastMenuItem.innerText = '';
+      // lastMenuItem.innerText = '';
 
-      lastMenuItem.appendChild(outerSpan);
+      // lastMenuItem.appendChild(outerSpan);
     }
   } else {
     var lastMenuItem = document.querySelector('#menu-menu-header li:last-child a');

@@ -22,7 +22,6 @@
                     <p class="center-text main-text">La construction bois par la confiance et la bonne humeur</p>
                     
 
-
                     <?php if ($video_id) { ?>
                         <div class="hero" id="background-video">
                             <div id="youtubeEmbed" class="hero_video" data-video-id="<?php echo ($video_id);?>"></div>
@@ -40,7 +39,7 @@
 
                 
                     <div class="background-image shadow"></div>
-                    <a href="#home">
+                    <a href="#home" data-aos="fade-up">
                         <div class="green-arrow">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/circle.svg" alt="cercle" class="logo-down circle">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-white.svg" alt="fleche" class="logo-down arrow ">

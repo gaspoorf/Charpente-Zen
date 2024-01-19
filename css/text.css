@@ -10,12 +10,10 @@ body{
 
 
 
-
 /* ---------- H ---------- */
 
 h2, .center-text{
-    /* font-family: 'Kalam', sans-serif; */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Kalam', sans-serif;
 }
 h1{
     font-size: 20px;
@@ -26,6 +24,7 @@ h1{
 .h1-2{
     font-size: 35px;
     margin: 0px;
+    font-family: 'Kalam', sans-serif;
 }
 h2{
     font-size: 25px;

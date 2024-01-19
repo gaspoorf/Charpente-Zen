@@ -4,7 +4,7 @@
     add_image_size('house', 400, 400, ['center', 'center']);
     add_image_size('image-presentation', 450, 380, ['center', 'center']);
 
-    add_image_size('pictures-realisations', 350, 450, ['center', 'center']);
+    add_image_size('pictures-realisations', 600, 800, ['center', 'center']);
     add_image_size('pictures-review', 106, 19, true);
     add_image_size('pictures-about', 400, 385, ['center', 'center']);
 
