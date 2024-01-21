@@ -146,9 +146,6 @@
 
         // AOS INIT js
         wp_enqueue_script('aosInit-script', get_template_directory_uri() . '/js/aos.js',array(),'1.0.0', array('strategy' => 'defer'));
-   
-        // TEXT P js
-        wp_enqueue_script('text-script', get_template_directory_uri() . '/js/text.js',array(),'1.0.0', array('strategy' => 'defer'));
     }
     
 
@@ -172,16 +169,11 @@
 
         register_nav_menus( array(
             'menu-footer' => 'Menu footer',
-
         ) );
         
     }
     add_action( 'after_setup_theme', 'custom_register_nav_menu', 0 );
 
-    
-
-
-    
     // Fonction pour ajouter une classe aux liens du menu
     function ajouter_classe_lien_menu($atts, $item, $args) {
         // Ajouter la classe 'link--metis' à chaque lien du menu
@@ -191,7 +183,4 @@
 
     // Ajouter le filtre au hook 'nav_menu_link_attributes'
     add_filter('nav_menu_link_attributes', 'ajouter_classe_lien_menu', 10, 3);
-
-
-
 ?>

@@ -76,12 +76,6 @@ footer a {
 
 
 
-
-
-
-
-
-
 .footer-column3 footer a::before,
 footer a::after {
     content: "";
@@ -97,8 +91,6 @@ footer a::after {
     transition: transform 0.3s;
 }
 
-
-
 footer a:hover::before {
     transform-origin: 0% 50%;
     transform: scaleX(1);
@@ -107,7 +99,6 @@ footer a:hover::before {
 footer .button{
     max-width: 150px;
 }
-
 
 
 /* MENU NAV FOOTER */
@@ -127,9 +118,6 @@ footer .button{
     font-size: 15px;
 }
 
-
-
-
 @media (max-width: 768px) {
 
     
@@ -148,7 +136,6 @@ footer .button{
     .center{
         text-align: center;
     }
-
 
     .footer-precision{
         display: flex;

@@ -2,28 +2,16 @@
     /* Template Name: Construction bois */ 
     get_header()
 ?>
-
-
-
 <?php 
-    // INTRO
     $wood_title = get_field('wood_title');
     $wood_catch = get_field('wood_catch'); 
     $wood_text = get_field('wood_text');
     $wood_secondary_title = get_field('wood_secondary_title');
     $wood_secondary_text = get_field('wood_secondary_text');
     $wood_deco = get_field('wood_deco');
-
-    // REALISATIONS
     $wood_section_title = get_field('wood_section_title');
     $wood_title_realisations = get_field('wood_title_realisations');
-?>
-
-
-<?php
 $category_slug = 'constructions-bois';
-
-// Récupérer toutes les images de la catégorie "constructions bois"
 $args = array(
     'posts_per_page' => -1,
     'post_type'      => 'realisations', 
@@ -35,10 +23,8 @@ $args = array(
         ),
     ),
 );
-
 $all_images_query = new WP_Query($args);
 $all_images = array();
-
 if ($all_images_query->have_posts()) {
     while ($all_images_query->have_posts()) {
         $all_images_query->the_post();
@@ -47,9 +33,7 @@ if ($all_images_query->have_posts()) {
     }
     wp_reset_postdata();
 }
-
 $image_number = count($all_images);
-
 if ($image_number >= 3) {
     $image_number = 3;
     $random_images = array_rand($all_images, $image_number);
@@ -61,11 +45,7 @@ if ($image_number >= 3) {
     $random_images = $all_images;
 }
 ?>
-
-
-
 <main class="pad-topM">
-
     <section class="white center">
         <div class="background-b-w">
             <img loading="lazy" class="pad1" src="<?php echo esc_url($wood_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($wood_deco['sizes']['pictures-b-w-height'] / 2); ?>" width="<?php echo esc_attr($wood_deco['sizes']['pictures-b-w-width'] / 2); ?>" alt="<?php echo esc_attr($wood_deco['alt']); ?>">
@@ -84,33 +64,26 @@ if ($image_number >= 3) {
             </div>
         </div>  
     </section>
-
-
-
-    <!-- REALISATIONS -->
     <section class="beige pad3 pad-bot" >
         <div class="simple-center RED">
             <h3><?php echo ($wood_section_title);?></h3>
             <h2><?php echo ($wood_title_realisations);?></h2>
-
             <div class="slider">
                 <div class="cards">
-                <?php if ($image_number == 1){?>
-                    <div class="card">
-                    <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
-                    </div>
-                <?php }else {
-
-                    if ($random_images){?>
-                        <?php foreach ($random_images as $random_index) : ?>
-                            <?php $random_image = $all_images[$random_index]; ?>
-                            <div class="card">
-                                <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
-                            </div>
-                    <?php endforeach; 
-                    }
-
-                } ?>
+                    <?php if ($image_number == 1){?>
+                        <div class="card">
+                            <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
+                        </div>
+                    <?php }else {
+                        if ($random_images){?>
+                            <?php foreach ($random_images as $random_index) : ?>
+                                <?php $random_image = $all_images[$random_index]; ?>
+                                <div class="card">
+                                    <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
+                                </div>
+                        <?php endforeach; 
+                        }
+                    } ?>
                 </div>
             </div>
             <div class="pad2">
@@ -121,5 +94,4 @@ if ($image_number >= 3) {
         </div>
     </section>
 </main>
-
 <?php get_footer() ?>

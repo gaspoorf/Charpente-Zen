@@ -11,20 +11,17 @@
     $title = get_field('home_title'); //titre 
     $presentation_title = get_field('home_presentation_title'); //texte présentation
     $presentation_image = get_field('home_presentation_image'); //image présentation visseuse
-
     // ACCUEIL PRESTATIONS
     $prestations_section_title = get_field('home_prestations_section_title'); //titre de section
     $prestations_title = get_field('home_prestations_title'); //titre 
     $prestations_outdoor_installations = get_field('home_prestation_outdoor_installations');
     $prestations_wood_constructions = get_field('home_prestation_wood_constructions');
     $prestations_energy_comfort = get_field('home_prestation_energy_comfort');
-
     // ACCUEIL A PROPOS
     $about_section_title = get_field('home_about_section_title'); //titre de section
     $about_title = get_field('home_about_title'); //titre 
     $about_text = get_field('home_about_text');
     $about_image = get_field('home_about_picture');
-
     // ACCUEIL AVIS
     $review_section_title = get_field('home_review_section_title'); //titre de section
     $review_title = get_field('home_review_title'); //titre 
@@ -44,7 +41,6 @@
     $review_name_4 = get_field('home_review_name_4');
     $review_stars_4 = get_field('home_reviews_stars_4');
     $review_text_4 = get_field('home_review_text_4');
-
     // ACCUEIL PARTENAIRES
     $partners_section_title = get_field('home_partners_section_title'); 
     $partners_title = get_field('home_partners_title'); 
@@ -58,9 +54,7 @@
     $partners_link_4 = get_field('home_partners_link_4');
     $partners_logo_5 = get_field('home_partners_picture_5');
     $partners_link_5 = get_field('home_partners_link_5');
-
 ?>
-
 <!-- ACCUEIL -->
 <section class="beige pad3 pad-bot" id="home">
     <img src="<?php echo get_template_directory_uri(); ?>./img/littlewoodBG.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
@@ -80,15 +74,13 @@
                 <h2 data-aos="fade-up"><?php echo ($title);?></h2>
                 <?php echo ($presentation_title);?></p>
             </div>
-            
         </div>
         <div class="section-first-content simple-center" data-aos="fade-left">
             <img loading="lazy" src="<?php echo($presentation_image['sizes']['image-presentation']); ?>" height="<?php echo($presentation_image['sizes']['image-presentation-height']); ?>" width="<?php echo($presentation_image['sizes']['image-presentation-width']); ?>" alt="<?php echo($presentation_image['alt']); ?>">
         </div>
     </div>
 </section>
-
-<!-- ACCUEIL A PROPOS -->
+<!-- A PROPOS -->
 <section class="beige pad3 pad-bot">
     <img src="<?php echo get_template_directory_uri(); ?>./img/woodBGleft.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
     <div class="section-second">
@@ -105,8 +97,7 @@
         </div>
     </div>
 </section>
-
-<!-- ACCUEIL PRESTATIONS -->
+<!-- PRESTATIONS -->
 <section class="white pad3 pad-bot">
     <img src="<?php echo get_template_directory_uri(); ?>./img/zingBGwhite.png" alt="Photo de charpente" class="wood-bg-3 bw t4">
     <div class="simple-center">
@@ -114,7 +105,6 @@
             <h3 data-aos="fade-up"><?php echo ($prestations_section_title);?></h3>
             <h2 data-aos="fade-up"><?php echo ($prestations_title);?></h2>
         </div>
-        
     </div>
     <div class="slider">
         <div class="cards"> 
@@ -142,9 +132,7 @@
         </div>
     </div>
 </section>
-
-
-<!-- ACCUEIL AVIS -->
+<!-- AVIS -->
 <section class="beige pad3 pad-bot">
     <div class="simple-center">
         <div>
@@ -183,9 +171,7 @@
     </div>
     <img src="<?php echo get_template_directory_uri(); ?>./img/houseBG.png" alt="Photo de charpente" class="wood-bg-4 bw t6">
 </section>
-
-
-<!-- ACCUEIL PARTENAIRES -->
+<!-- PARTENAIRES -->
 <section class="white pad3 pad-bot">
     <div class="simple-center">
         <div>
@@ -200,18 +186,7 @@
         <a href="<?php echo ($partners_link_4) ?>" target="_blank" data-aos="fade-left"><img loading="lazy" src="<?php echo($partners_logo_4['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
         <a href="<?php echo ($partners_link_5) ?>" target="_blank" data-aos="fade-left"><img loading="lazy" src="<?php echo($partners_logo_5['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
     </div>
-    
 </section>
-
-
-
-
-
-
-
-
-
-
 <?php get_footer(); ?>
 
 

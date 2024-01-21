@@ -10,7 +10,6 @@ $contact_phone = get_field('contact_phone', $contact_page_id);
                     <p class="p2 footer-precision">Adresse</p>
                     <a href="https://www.google.com/maps/place/<?php echo ($contact_adress);?>" target="_blank"><p class="p2"><?php echo ($contact_adress);?></p></a>
                     <a href="tel:+<?php echo ($contact_phone) ?>" target="_blank"><p class="p2"><?php echo ($contact_phone);?></p></a>
-                    
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>">
                         <button class="button button-green"><span><span>Me contacter</span></span></button>
                     </a>
@@ -22,14 +21,10 @@ $contact_phone = get_field('contact_phone', $contact_page_id);
                 </div>
                 <div class="footer-column3">
                     <p class="p2 footer-precision">Plan du site</p>
-                    
-                    <?php wp_nav_menu(array('theme_location' => 'menu-footer', 'container_class' => 'footer-menu')); ?>
-                    
+                    <?php wp_nav_menu(array('theme_location' => 'menu-footer', 'container_class' => 'footer-menu')); ?> 
                 </div>
             </div>
-            
             <hr id="footer-hr">
-
             <div class="center footer-bottom">
                 <a href="#"><p class="p2">Charpente Zen ©2023</p></a>
                 <p class="p2"> - </p>

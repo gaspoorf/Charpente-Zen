@@ -11,15 +11,13 @@
     border-radius: 10px;
 }
 
-
-/* Gérer position droite et gauche */
+/* position left or right */
 .right .video-cms{
     order: 2;
 }
 .right .text-cms2 {
     order: 1;
 }
-
 
 .left .video-cms{
     order: 1;

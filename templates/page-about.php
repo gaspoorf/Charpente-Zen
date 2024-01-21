@@ -4,19 +4,19 @@
 ?>
 
 <?php 
-    // INTRO
     $about_section_title = get_field('about_section_title');
     $about_title = get_field('about_title'); 
     $about_text = get_field('about_text');
     $about_image = get_field('about_image');
-
     $about_section_2_title = get_field('about_section_2_title');
     $about_title_2 = get_field('about_title_2');
     $about_video_url = get_field('about_video_url');
     $video_id = get_youtube_video_id($about_video_url);
+    $about_section_3_title = get_field('about_section_3_title');
+    $about_video_url_2 = get_field('about_video_url_2');
+    $video_id_2 = get_youtube_video_id($about_video_url_2);
 ?>
 <main class="pad-topM">
-
     <section class="white pad3 about">
         <div class="simple-center">
             <h3 class="pad1"><?php echo ($about_section_title);?></h3>
@@ -33,8 +33,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="beige pad3 pad-bot">
         <div class="simple-center">
             <h3 class="pad1"><?php echo ($about_section_2_title);?></h3>
@@ -48,10 +46,19 @@
                 }
             ?>
         </div>
+        <div class="pad3">
+            <div class="simple-center">
+                <h3 class="pad1"><?php echo ($about_section_3_title);?></h3>
+            </div>
+            <div class="simple-center video">
+                <?php if ($video_id_2) {
+                    echo '<iframe id="video"  width="100%" height="100%" src="https://www.youtube.com/embed/' . $video_id . '? frameborder="0" allowfullscreen></iframe>';
+                    } else {
+                        echo '<p>URL de vidéo YouTube non valide.</p>';
+                    }
+                ?>
+            </div>
+        </div>
     </section>
-
 </main>
-
-
-
 <?php get_footer() ?>

@@ -1,19 +1,13 @@
 <?php 
     /* Template Name: Contact */ 
     get_header();
-    
     if(isset($_POST['submit']) && $_POST['firstname'] !== ''){
         var_dump($_POST);
         $message = 'Nouvelle demande de '.$_POST['firstname'].' '.$_POST['lastname'];
         wp_mail('gaspard_hedde@yahoo.com', 'Sujet du mail', $message );
     }
 ?>
-
-
-
-
 <?php 
-    // INTRO
     $contact_title = get_field('contact_title');
     $contact_location = get_field('contact_location'); 
     $contact_text = get_field('contact_text');
@@ -23,9 +17,7 @@
     $contact_title_form = get_field('contact_title_form');
     $contact_image_bottom = get_field('contact_image_bottom');
 ?>
-
 <main class="pad-topM contact">
-
     <section class="white center gap1">
         <div class="background-b-w">
             <a href="https://www.google.com/maps/place/<?php echo ($contact_adress)?>" target="_blank">
@@ -55,16 +47,10 @@
             </div>
         </div>  
     </section>
-
-
-
-
-    <!-- REALISATIONS -->
     <section class="beige pad3 pad-bot">
         <div class="center gap1">
             <div>
                 <h2><?php echo ($contact_title_form);?></h2>
-                <!-- FORMULAIRE DE CONTACT -->
                 <form action="" method="post">
                     <fieldset>
                         <input type="text" name="name" placeholder="Nom" value="" required>
@@ -84,11 +70,7 @@
             <div class="background-b-w">
                 <img loading="lazy" class="pad1" src="<?php echo esc_url($contact_image_bottom['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($contact_image_bottom['sizes']['pictures-b-w-height'] / 3); ?>" width="<?php echo esc_attr($contact_image_bottom['sizes']['pictures-b-w-width'] / 3); ?>" alt="<?php echo esc_attr($contact_image_bottom['alt']); ?>">
             </div>
-            
         </div>
     </section>
 </main>
-
-
-
 <?php get_footer() ?>

@@ -1,3 +1,3 @@
 <?php get_header() ?>
-    Sretour sur page index
+    Retour sur page index
 <?php get_footer() ?>
