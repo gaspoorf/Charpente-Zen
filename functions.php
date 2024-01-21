@@ -10,8 +10,12 @@
 
     add_image_size('map', 400, 0, false);
 
-
+    //SIZE ABOUT HOME
     add_image_size('pictures-about', 800, 700, ['center', 'center']);
+
+    //SIZE ABOUT ROND
+    add_image_size('pictures-about-rond', 800, 800, ['center', 'center']);
+    
     //SIZE REALISATIONS (CARRE)
     add_image_size('pictures-square', 600, 600, ['center', 'center']);
 
@@ -28,7 +32,7 @@
     add_image_size('200', 200, 0, false);
 
     //LOGO MENU
-    add_image_size('logo', 70, 0, false);
+    add_image_size('logo', 75, 0, false);
 
     
 

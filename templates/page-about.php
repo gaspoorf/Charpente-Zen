@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="pad1 rond">
-                <img loading="lazy" src="<?php echo($about_image['sizes']['map']); ?>" height="<?php echo($about_image['sizes']['map-height']); ?>" width="<?php echo($about_image['sizes']['map-width']); ?>" alt="<?php echo($about_image['alt']); ?>">
+                <img loading="lazy" class="pad1 " src="<?php echo esc_url($about_image['sizes']['pictures-about-rond']); ?>" height="<?php echo esc_attr($about_image['sizes']['pictures-about-rond-height'] / 2); ?>" width="<?php echo esc_attr($about_image['sizes']['pictures-about-rond-width'] / 2); ?>" alt="<?php echo esc_attr($about_image['alt']); ?>">
             </div>
         </div>
     </section>
