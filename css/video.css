@@ -24,9 +24,9 @@
   min-width: 177.77vh;
 }
 
-.hero iframe {
+/* .hero iframe {
   opacity: 0;
-}
+} */
 
 .hero iframe.loaded {
   opacity: 1;

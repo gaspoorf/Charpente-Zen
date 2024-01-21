@@ -142,6 +142,9 @@
 
         // AOS INIT js
         wp_enqueue_script('aosInit-script', get_template_directory_uri() . '/js/aos.js',array(),'1.0.0', array('strategy' => 'defer'));
+   
+        // TEXT P js
+        wp_enqueue_script('text-script', get_template_directory_uri() . '/js/text.js',array(),'1.0.0', array('strategy' => 'defer'));
     }
     
 

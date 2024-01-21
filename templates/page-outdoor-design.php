@@ -81,11 +81,14 @@
                     <div class="pad3" data-aos="fade-left">
                         <h1 class="h1-2 pad2"><?php echo ($outdoor_title);?></h1>
                         <h3 class="pad1"><?php echo ($outdoor_catch);?></h3>
-                        <p class="p3"><?php echo ($outdoor_text);?></p>
+                        <div class="p3">
+                            <?php echo ($outdoor_text);?>
+                        </div>
+                        
                     </div>
                     <div class="pad3" data-aos="fade-left">
                         <h3 class="pad1"><?php echo ($outdoor_secondary_title);?></h3>
-                        <p class="p3"><?php echo ($outdoor_secondary_text);?></p>
+                        <div class="p3"><?php echo ($outdoor_secondary_text);?></div>
                     </div>
                 </div>
             </div>  

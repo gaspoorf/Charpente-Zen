@@ -93,7 +93,7 @@ html{
 }
 
 .menu a::before,
-.menu a::after {
+.menu a::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -106,6 +106,7 @@ html{
     transform: scaleX(0);
     transition: transform 0.3s;
 }
+
 
 
 

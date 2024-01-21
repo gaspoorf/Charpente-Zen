@@ -78,7 +78,7 @@
             <div class="left">
                 <h3 data-aos="fade-up" ><?php echo ($section_title);?></h3>
                 <h2 data-aos="fade-up"><?php echo ($title);?></h2>
-                <p class="presentation-text"><?php echo ($presentation_title);?></p>
+                <?php echo ($presentation_title);?></p>
             </div>
             
         </div>
@@ -98,7 +98,7 @@
         <div class="section-first-content simple-center" data-aos="fade-left">
             <h3 data-aos="fade-up"><?php echo ($about_section_title);?></h3>
             <h2 data-aos="fade-up"><?php echo ($about_title);?></h2>
-            <p class="presentation-text"><?php echo ($about_text);?></p>
+            <?php echo ($about_text);?>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('a-propos'))); ?>">
                 <button class="button button-green"><span><span>Me découvrir</span></span></button>
             </a>

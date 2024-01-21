@@ -40,7 +40,7 @@
                 </div>
                 <div class="pad2">
                     <h3 class="pad1">ME CONTACTER</h3>
-                    <p class="p3"><?php echo ($contact_text);?></p>
+                    <div class="p3"><?php echo ($contact_text);?></div>
                 </div>
                 <div class="pad2">
                     <h3 class="pad1">ADRESSE</h3>

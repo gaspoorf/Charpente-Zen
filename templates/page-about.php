@@ -24,9 +24,9 @@
         </div>
         <div class="pad3 center gap1">
             <div class="left-CMS pad2">
-                <p class="p3">
+                <div class="p3">
                     <?php echo ($about_text);?>
-                </p>
+                </div>
             </div>
             <div class="pad1 rond">
                 <img loading="lazy" src="<?php echo($about_image['sizes']['map']); ?>" height="<?php echo($about_image['sizes']['map-height']); ?>" width="<?php echo($about_image['sizes']['map-width']); ?>" alt="<?php echo($about_image['alt']); ?>">

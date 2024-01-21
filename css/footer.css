@@ -82,7 +82,7 @@ footer a {
 
 
 
-footer a::before,
+.footer-column3 footer a::before,
 footer a::after {
     content: "";
     position: absolute;

@@ -44,8 +44,9 @@ body{
     transform: translate(-300px, 0px); */
 }
 
-
-
+strong{
+    font-weight: bolder;
+}
 
 
 /* ---------- PADDINGS ---------- */
