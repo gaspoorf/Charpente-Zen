@@ -21,6 +21,7 @@ fieldset {
 
 textarea{
     resize: none;
+    height: 150px;
 }
 
 input[type="text"],
@@ -35,6 +36,8 @@ input[type="email"] {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 input[type="text"]:focus,
 textarea:focus,
@@ -65,9 +68,6 @@ input[type="email"]:focus {
 @media (max-width: 768px) {
     .contact .left-CMS{
         order: 1;
-        padding-left: 40px;
-        padding-right: 40px;
-
     }
     
     .contact .background-b-w{

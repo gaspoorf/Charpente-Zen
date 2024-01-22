@@ -146,6 +146,34 @@
 
 
 
+
+
+
+#about-picture{
+    order: 1;
+}
+#about-infos{
+    order: 2;
+}
+
+
+
+
+@media (max-width: 768px) {
+    #about-infos{
+        order: 1;
+    }
+    
+
+    #about-picture {
+      order: 2;
+    }
+}
+
+
+
+
+
 @media (max-width: 768px) {
 
     .bw{

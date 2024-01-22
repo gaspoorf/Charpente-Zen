@@ -52,7 +52,7 @@
             </div>
             <div class="simple-center video">
                 <?php if ($video_id_2) {
-                    echo '<iframe id="video"  width="100%" height="100%" src="https://www.youtube.com/embed/' . $video_id . '? frameborder="0" allowfullscreen></iframe>';
+                    echo '<iframe id="video_2"  width="100%" height="100%" src="https://www.youtube.com/embed/' . $video_id_2 . '? frameborder="0" allowfullscreen></iframe>';
                     } else {
                         echo '<p>URL de vidéo YouTube non valide.</p>';
                     }

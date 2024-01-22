@@ -26,4 +26,3 @@ $video_id = get_youtube_video_id($video_url);
 </div>
 
 
-

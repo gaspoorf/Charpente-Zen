@@ -84,10 +84,10 @@
 <section class="beige pad3 pad-bot">
     <img src="<?php echo get_template_directory_uri(); ?>./img/woodBGleft.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
     <div class="section-second">
-        <div class="section-first-content1 simple-center" data-aos="fade-right">
+        <div id="about-picture" class="section-first-content1 simple-center" data-aos="fade-right">
             <img loading="lazy" class="pad1 " src="<?php echo esc_url($about_image['sizes']['pictures-about']); ?>" height="<?php echo esc_attr($about_image['sizes']['pictures-about-height'] / 2); ?>" width="<?php echo esc_attr($about_image['sizes']['pictures-about-width'] / 2); ?>" alt="<?php echo esc_attr($about_image['alt']); ?>">
         </div>
-        <div class="section-first-content simple-center" data-aos="fade-left">
+        <div id="about-infos" class="section-first-content simple-center" data-aos="fade-left">
             <h3 data-aos="fade-up"><?php echo ($about_section_title);?></h3>
             <h2 data-aos="fade-up"><?php echo ($about_title);?></h2>
             <?php echo ($about_text);?>

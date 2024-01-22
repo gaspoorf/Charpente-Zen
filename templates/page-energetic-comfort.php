@@ -51,7 +51,7 @@
     }
 ?>
 <main class="pad-topM">
-    <section class="white align">
+    <section class="white center">
         <div class="background-b-w" data-aos="fade-right">
             <img loading="lazy" class="pad1" src="<?php echo esc_url($comfort_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w-height'] / 2); ?>" width="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w-width'] / 2); ?>" alt="<?php echo esc_attr($comfort_deco['alt']); ?>">
         </div>

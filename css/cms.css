@@ -12,16 +12,16 @@
 }
 
 /* position left or right */
-.right .video-cms{
+.right-page .video-cms{
     order: 2;
 }
-.right .text-cms2 {
+.right-page .text-cms2 {
     order: 1;
 }
 
-.left .video-cms{
+.left-page .video-cms{
     order: 1;
 }
-.left .text-cms2 {
+.left-page .text-cms2 {
     order: 2;
 }

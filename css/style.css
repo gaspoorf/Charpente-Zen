@@ -108,6 +108,13 @@ strong{
     z-index: 2;
 }
 
+.left-page{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
 
 b{
     font-weight: bolder;
@@ -121,11 +128,13 @@ b{
 .beige{
     background-color: var(--beige);
     position: relative;
+    overflow: hidden;
 }
 
 .white{
     background-color: var(--white);
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -137,7 +146,7 @@ b{
 }
 
 
-.video iframe { 
+.video iframe,.video .rll-youtube-player { 
     width: 50%;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
@@ -146,31 +155,7 @@ b{
 
 
 
-/* ---------- MEDIA QUERIES ---------- */
-@media (max-width: 768px) {
-    .wrap{
-        flex-wrap: nowrap;
-    }
 
-    .video iframe { 
-        width: 90%;
-        aspect-ratio: 16 / 9;
-    }
-
-    
-    .pad-top2{
-        padding-top: 0px;
-    }
-
-}
-
-@media (max-width: 1080px) {
-
-    .pad-topM{
-        padding-top: 50px;
-    }
-
-}
 
 /* PRESTATIONS CARTES */
 .slider {
@@ -190,12 +175,7 @@ b{
     overflow-x: scroll;
 }
 
-/* A MODIFIER */
-@media screen and (max-width: 768px) {
-    .cards {
-        justify-content: start; /* a modifier pour responsive de center a start */
-    }
-}
+
 
 .cards::-webkit-scrollbar {
     display: none;
@@ -268,9 +248,56 @@ h4 {
 
 
 
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 1080px) {
+
+    .pad-topM{
+        padding-top: 50px;
+    }
+
+    .background-b-w img{
+        max-width: 550px;
+        height: auto;
+    }
+    
+    .text-cms,
+    .left-CMS, 
+    .text-cms2{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
 
 
 
+@media (max-width: 768px) {
+    .wrap{
+        flex-wrap: nowrap;
+    }
 
+    .video iframe, .video-cms iframe, .video .rll-youtube-player{ 
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 
+    
+    .pad-top2{
+        padding-top: 0px;
+    }
+
+    .cards {
+        justify-content: start; /* a modifier pour responsive de center a start */
+    }
+
+    .background-b-w img{
+        max-width: 350px;
+        height: auto;
+    }
+    img{
+        max-width: 350px;
+        height: auto;
+    }
+}
 
