@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Charpente Zen, basé dans l'avant-pays savoyard, vous offre des services complets, de la construction bois à l'aménagement extérieur. Réalisez vos projets avec confiance, nous répondons à tous vos besoins.">
         <?php wp_head() ?>
+        <title>Charpente Zen</title>
         <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/logo-icon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/logo-icon.ico" type="image/x-icon">
     </head>

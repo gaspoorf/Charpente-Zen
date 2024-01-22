@@ -3,7 +3,7 @@ $contact_page_id = get_page_by_path('contact')->ID; // Récupérer l'ID de la pa
 $contact_adress = get_field('contact_adress', $contact_page_id);
 $contact_phone = get_field('contact_phone', $contact_page_id);
 ?> 
-        
+        <?php wp_footer() ?>
         <footer>
             <div class="center footer-top">
                 <div class="footer-column1">
