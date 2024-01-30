@@ -25,15 +25,16 @@
                             <div id="youtubeEmbed" class="hero_video" data-video-id="<?php echo ($video_id);?>"></div>
                             <!-- Image de remplacement -->
                             <img loading="lazy" class="hero_image loading-overlay" src="<?php echo($replace_image['sizes']['replace']); ?>"  height="100vh" width="100vh" alt="<?php echo($replace_image['alt']); ?>">
+                            <div class="background-image shadow"></div>
                         </div>
                     <?php } else { ?>
                         <div class="hero" id="background-image">
                             <!-- Afficher l'image de remplacement si l'URL de la vidéo n'est pas valide ou n'existe pas -->
                             <img loading="lazy" class="hero_image" src="<?php echo($replace_image['sizes']['replace']); ?>"  height="100vh" width="100vh" alt="<?php echo($replace_image['alt']); ?>">
+                            <div class="background-image shadow"></div>
                         </div>
                     <?php } ?>
-                    <div class="background-image shadow"></div>
-                    <a href="#home" data-aos="fade-up">
+                    <a href="#home">
                         <div class="green-arrow">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/circle.svg" alt="cercle" class="logo-down circle">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-white.svg" alt="fleche" class="logo-down arrow ">

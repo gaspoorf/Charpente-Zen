@@ -66,13 +66,7 @@
     
 
 
-      add_filter('script_loader_tag', function ($tag, $handle, $src) {
-    
-        if ( $handle === 'aosInit-script' ) {
-           $tag = str_replace('<script ', '<script type="module" ', $tag);
-        }
-        return $tag;
-     }, 10, 3);
+      
     
     //CSS
     
@@ -114,8 +108,7 @@
 
         
         
-        // ANIMATIONS CSS
-        wp_enqueue_style('aos-style', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
+        
         
    
         
@@ -144,8 +137,7 @@
         // button contact nav JS
         wp_enqueue_script('btn-script', get_template_directory_uri() . '/js/button.js',array(),'1.0.0', array('strategy' => 'defer'));
 
-        // AOS INIT js
-        wp_enqueue_script('aosInit-script', get_template_directory_uri() . '/js/aos.js',array(),'1.0.0', array('strategy' => 'defer'));
+        
     }
     
 

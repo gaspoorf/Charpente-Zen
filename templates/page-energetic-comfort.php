@@ -52,17 +52,17 @@
 ?>
 <main class="pad-topM">
     <section class="white center">
-        <div class="background-b-w" data-aos="fade-right">
+        <div class="background-b-w">
             <img loading="lazy" class="pad1" src="<?php echo esc_url($comfort_deco['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w-height'] / 2); ?>" width="<?php echo esc_attr($comfort_deco['sizes']['pictures-b-w-width'] / 2); ?>" alt="<?php echo esc_attr($comfort_deco['alt']); ?>">
         </div>
         <div class="left-CMS">
             <div>
-                <div class="pad3" data-aos="fade-left">
+                <div class="pad3">
                     <h1 class="h1-2 pad2"><?php echo ($comfort_title);?></h1>
                     <h3 class="pad1"><?php echo ($comfort_catch);?></h3>
                     <div class="p3"><?php echo ($comfort_text);?></div>
                 </div>
-                <div class="pad3" data-aos="fade-left">
+                <div class="pad3">
                     <h3 class="pad1"><?php echo ($comfort_secondary_title);?></h3>
                     <div class="p3"><?php echo ($comfort_secondary_text);?></div>
                 </div>
@@ -71,19 +71,19 @@
     </section>
     <section class="beige pad3 pad-bot" >
         <div class="simple-center">
-            <h3 data-aos="fade-up"><?php echo ($comfort_section_title);?></h3>
-            <h2 data-aos="fade-up"><?php echo ($comfort_title_realisations);?></h2>
+            <h3><?php echo ($comfort_section_title);?></h3>
+            <h2><?php echo ($comfort_title_realisations);?></h2>
             <div class="slider">
                 <div class="cards">
                     <?php if ($image_number == 1){?>
                         <div class="card">
-                            <img loading="lazy" data-aos="fade-up" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
+                            <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
                         </div>
                     <?php }else {
                         if ($random_images){?>
                             <?php foreach ($random_images as $random_index) : ?>
                                 <?php $random_image = $all_images[$random_index]; ?>
-                                <div class="card" data-aos="fade-up">
+                                <div class="card">
                                     <img loading="lazy" class="pad1" src="<?php echo esc_url($random_image['sizes']['pictures-square']); ?>" height="<?php echo esc_attr($random_image['sizes']['pictures-square-height'] / 2); ?>" width="<?php echo esc_attr($random_image['sizes']['pictures-square-width'] / 2); ?>" alt="<?php echo esc_attr($random_image['alt']); ?>">
                                 </div>
                         <?php endforeach; 
@@ -91,7 +91,7 @@
                     } ?>
                 </div>
             </div>
-            <div class="pad2" data-aos="fade-up">
+            <div class="pad2">
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('realisations'))); ?>">
                     <button class="button button-green"><span><span>En voir plus</span></span></button>
                 </a>
