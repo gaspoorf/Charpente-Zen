@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="pad2" data-aos="fade-up">
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('page-realisations'))); ?>">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('realisations'))); ?>">
                     <button class="button button-green"><span><span>En voir plus</span></span></button>
                 </a>
             </div>
