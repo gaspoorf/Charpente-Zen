@@ -163,6 +163,7 @@ html{
 
 #menu2 #menu-menu-header {
     background-color: var(--dark-green);
+    height: 100vh;
 }
 
 @keyframes bounceUpDown {
@@ -201,7 +202,6 @@ html{
     #menu #menu-menu-header {
         background-color: var(--dark-green);
         height: 100vh;
-        margin-bottom: 30px;
     }
     
     .header-menu ul{

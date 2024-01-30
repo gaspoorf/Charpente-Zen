@@ -7,7 +7,6 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos){
     document.getElementById("menu-menu-header").style.top = "0";
   } else {
-    document.getElementById("menu-menu-header").style.top = "-150px";
     document.getElementById("menu-menu-header").classList.remove("green");
   }
 
