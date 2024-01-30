@@ -128,7 +128,7 @@ html{
 /* ---------- CENTER ARROW ---------- */
 .logo-down{
     position: absolute;
-    left: 50%;
+    left: 47%;
     cursor: pointer;
 }
 
@@ -163,7 +163,6 @@ html{
 
 #menu2 #menu-menu-header {
     background-color: var(--dark-green);
-    height: 100vh;
 }
 
 @keyframes bounceUpDown {
@@ -199,10 +198,12 @@ html{
     }
 
     /* fond vert du menu nav accueuil */
-    #menu #menu-menu-header {
+    #menu #menu-menu-header,
+    #menu2 #menu-menu-header {
         background-color: var(--dark-green);
         height: 100vh;
     }
+
     
     .header-menu ul{
         display: flex;
