@@ -1,10 +1,19 @@
 <?php 
     /* Template Name: Contact */ 
     get_header();
-    if(isset($_POST['submit']) && $_POST['firstname'] !== ''){
-        var_dump($_POST);
-        $message = 'Nouvelle demande de '.$_POST['firstname'].' '.$_POST['lastname'];
-        wp_mail('gaspard_hedde@yahoo.com', 'Sujet du mail', $message );
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Vérifier si les champs requis sont définis
+        if(isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["subject"]) && isset($_POST["message"])) {
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $subject = $_POST["subject"];
+            $message = $_POST["message"];
+    
+            $to = "gaspard_hedde@yahoo.com";  // Remplacez ceci par votre adresse e-mail
+            $headers = "From: $email";
+    
+            mail($to, $subject, $message, $headers);
+        }
     }
 ?>
 <?php 
@@ -51,7 +60,7 @@
         <div class="center gap1">
             <div>
                 <h2><?php echo ($contact_title_form);?></h2>
-                <form action="" method="post">
+                <form action="<?php echo esc_url(home_url('/traitement/')); ?>" method="post">
                     <fieldset>
                         <input type="text" name="name" placeholder="Nom" value="" required>
                     </fieldset>

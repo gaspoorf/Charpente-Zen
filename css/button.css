@@ -11,7 +11,7 @@
 	position: relative;
 	display: inline-block;
   	border-radius: 5px;
-	z-index: 10;
+	z-index: 4;
 }
 
 .button::before,

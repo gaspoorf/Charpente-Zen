@@ -122,8 +122,6 @@ b{
 
 
 
-
-
 /* ---------- COLORS ---------- */
 .beige{
     background-color: var(--beige);
@@ -245,7 +243,10 @@ h4 {
 }
 
 
-
+.background-b-w img{
+    max-width: 550px;
+    height: auto;
+}
 
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -256,7 +257,7 @@ h4 {
     }
 
     .background-b-w img{
-        max-width: 550px;
+        max-width: 450px;
         height: auto;
     }
     
