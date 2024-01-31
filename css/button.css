@@ -33,8 +33,13 @@
 
 .menu-item .button-green{
 	background-color: var(--green);
+	transition: 0.3s ease-in-out;
 }
 
+.menu-item .button-green:hover{
+	background-color: var(--beige);
+	color: var(--green);
+}
 .button-green-contact {
 	background-color: var(--green);
 }

@@ -134,8 +134,7 @@
         // button contact nav JS
         wp_enqueue_script('button-script', get_template_directory_uri() . '/js/button-contact.js',array(),'1.0.0', array('strategy' => 'defer'));
 
-        // button contact nav JS
-        wp_enqueue_script('btn-script', get_template_directory_uri() . '/js/button.js',array(),'1.0.0', array('strategy' => 'defer'));
+       
 
         
     }

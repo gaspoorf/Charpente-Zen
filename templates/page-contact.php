@@ -71,6 +71,14 @@
                 <img loading="lazy" class="pad1" src="<?php echo esc_url($contact_image_bottom['sizes']['pictures-b-w']); ?>" height="<?php echo esc_attr($contact_image_bottom['sizes']['pictures-b-w-height'] / 3); ?>" width="<?php echo esc_attr($contact_image_bottom['sizes']['pictures-b-w-width'] / 3); ?>" alt="<?php echo esc_attr($contact_image_bottom['alt']); ?>">
             </div>
         </div>
+        <div class="center pad-top1">
+            <div class="p5 catch">
+                <p>
+                    Afin de traiter votre demande, CHARPENTE ZEN devra effectuer un traitement des données personnelles vous concernant. Les données sont conservées pendant 2 ans à compter de notre dernier contact et sont destinées exclusivement à CHARPENTE ZEN, elles ne seront pas transmises à des tiers.<br><br>
+                    Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification des données vous concernant, d’un droit d’opposition pour motifs légitimes, d’un droit à l’effacement des données. Vous disposez également d’un droit à la récupération et à la portabilité des données dans certains cas spécifiquement prévus par la loi. 
+                </p>
+            </div>
+        </div>
     </section>
 </main>
 <?php get_footer() ?>

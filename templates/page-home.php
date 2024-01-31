@@ -57,7 +57,7 @@
 ?>
 <!-- ACCUEIL -->
 <section class="beige pad3 pad-bot" id="home">
-    <img src="<?php echo get_template_directory_uri(); ?>./img/littlewoodBG.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/littlewoodBG.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
     <div class="center gap1">
         <div class="catch">
             <h1><?php echo ($catch);?></h1>
@@ -66,7 +66,7 @@
     </div>
 </section>
 <section class="white pad3 pad-bot">
-<img src="<?php echo get_template_directory_uri(); ?>./img/woodBGwhite.png" alt="Photo de charpente" class="wood-bg-2 bw t2">
+<img src="<?php echo get_template_directory_uri(); ?>/img/woodBGwhite.png" alt="Photo de charpente" class="wood-bg-2 bw t2">
     <div class="section-second">
         <div class="section-first-content1 align">
             <div class="left">
@@ -82,7 +82,7 @@
 </section>
 <!-- A PROPOS -->
 <section class="beige pad3 pad-bot">
-    <img src="<?php echo get_template_directory_uri(); ?>./img/woodBGleft.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/woodBGleft.png" alt="Photo de charpente" class="wood-bg-1 bw t2">
     <div class="section-second">
         <div id="about-picture" class="section-first-content1 simple-center" >
             <img loading="lazy" class="pad1 " src="<?php echo esc_url($about_image['sizes']['pictures-about']); ?>" height="<?php echo esc_attr($about_image['sizes']['pictures-about-height'] / 2); ?>" width="<?php echo esc_attr($about_image['sizes']['pictures-about-width'] / 2); ?>" alt="<?php echo esc_attr($about_image['alt']); ?>">
@@ -99,7 +99,7 @@
 </section>
 <!-- PRESTATIONS -->
 <section class="white pad3 pad-bot">
-    <img src="<?php echo get_template_directory_uri(); ?>./img/zingBGwhite.png" alt="Photo de charpente" class="wood-bg-3 bw t4">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/zingBGwhite.png" alt="Photo de charpente" class="wood-bg-3 bw t4">
     <div class="simple-center">
         <div>
             <h3><?php echo ($prestations_section_title);?></h3>
@@ -169,7 +169,7 @@
             <button class="button button-green"><span><span>Voir plus d'avis</span></span></button>
         </a>
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>./img/houseBG.png" alt="Photo de charpente" class="wood-bg-4 bw t6">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/houseBG.png" alt="Photo de charpente" class="wood-bg-4 bw t6">
 </section>
 <!-- PARTENAIRES -->
 <section class="white pad3 pad-bot">
@@ -180,11 +180,26 @@
         </div>
     </div>
     <div class="center gap1">
-        <a href="<?php echo ($partners_link_1) ?>" target="_blank"><img loading="lazy" src="<?php echo($partners_logo_1['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
-        <a href="<?php echo ($partners_link_2) ?>" target="_blank"><img loading="lazy" src="<?php echo($partners_logo_2['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
-        <a href="<?php echo ($partners_link_3) ?>" target="_blank"><img loading="lazy" src="<?php echo($partners_logo_3['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
-        <a href="<?php echo ($partners_link_4) ?>" target="_blank"><img loading="lazy" src="<?php echo($partners_logo_4['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
-        <a href="<?php echo ($partners_link_5) ?>" target="_blank"><img loading="lazy" src="<?php echo($partners_logo_5['sizes']['pictures-realisations']); ?>" height="" width="" alt=""></a>
+        <?php if (!empty($partners_link_1)): ?>
+            <a href="<?php echo $partners_link_1 ?>" name="partner1" target="_blank"><img loading="lazy" src="<?php echo $partners_logo_1['sizes']['pictures-realisations']; ?>" height="auto" width="auto" alt="logo partenaire"></a>
+        <?php endif; ?>
+
+        <?php if (!empty($partners_link_2)): ?>
+            <a href="<?php echo $partners_link_2 ?>" name="partner2" target="_blank"><img loading="lazy" src="<?php echo $partners_logo_2['sizes']['pictures-realisations']; ?>" height="auto" width="auto" alt="logo partenaire"></a>
+        <?php endif; ?>
+
+        <?php if (!empty($partners_link_3)): ?>
+            <a href="<?php echo $partners_link_3 ?>" name="partner3" target="_blank"><img loading="lazy" src="<?php echo $partners_logo_3['sizes']['pictures-realisations']; ?>" height="auto" width="auto" alt="logo partenaire"></a>
+        <?php endif; ?>
+
+        <?php if (!empty($partners_link_4)): ?>
+            <a href="<?php echo $partners_link_4 ?>" name="partner4" target="_blank"><img loading="lazy" src="<?php echo $partners_logo_4['sizes']['pictures-realisations']; ?>" height="auto" width="auto" alt="logo partenaire"></a>
+        <?php endif; ?>
+
+        <?php if (!empty($partners_link_5)): ?>
+            <a href="<?php echo $partners_link_5 ?>" name="partner5" target="_blank"><img loading="lazy" src="<?php echo $partners_logo_5['sizes']['pictures-realisations']; ?>" height="auto" width="auto" alt="logo partenaire"></a>
+        <?php endif; ?>
+
     </div>
 </section>
 <?php get_footer(); ?>

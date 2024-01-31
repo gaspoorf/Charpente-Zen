@@ -16,7 +16,7 @@ $contact_phone = get_field('contact_phone', $contact_page_id);
                 </div>
                 <div class="footer-column2">
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('accueil'))); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/LogoGreen.png" alt="Logo Charpente Zen" width="200px">                 
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/LogoGreen.png" alt="Logo Charpente Zen" width="200px" hieght="auto">                 
                     </a>
                 </div>
                 <div class="footer-column3">

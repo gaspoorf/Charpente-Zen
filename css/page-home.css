@@ -88,7 +88,7 @@
 
 
 .stars{
-    height: 19px;
+    max-height: 19px;
     width: 106px;
 }
 
@@ -105,21 +105,26 @@
 }
 .t1{
     width: 100px;
+    height: auto;
 }
 .t2{
     width: 250px;
+    height: auto;
 }
 
 .t3{
     width: 180px;
+    height: auto;
 }
 
 .t4{
     width: 300px;
+    height: auto;
 }
 
 .t6{
     width: 1000px;
+    height: auto;
 }
 
 .wood-bg-2{

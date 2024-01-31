@@ -35,7 +35,7 @@ h2{
 }
 h3{
     font-size: 15px;
-    color: var(--green);
+    color: var(--green2);
 }
 h4{
     font-size: 22px;
@@ -74,6 +74,10 @@ p{
 }
 
 
+.p5 p{
+    font-size: 12px ;
+    color: var(--green);
+}
 
 
 
