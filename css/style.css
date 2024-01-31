@@ -144,11 +144,14 @@ b{
 }
 
 
-.video iframe,.video .rll-youtube-player { 
+
+.video iframe,.video .rll-youtube-player iframe{ 
     width: 50%;
+    height: auto;
     aspect-ratio: 16 / 9;
     border-radius: 10px;
 }
+
 
 
 
@@ -277,11 +280,13 @@ h4 {
         flex-wrap: nowrap;
     }
 
-    .video iframe, .video-cms iframe, .video .rll-youtube-player{ 
+    .video iframe, .video-cms iframe, .video .rll-youtube-player iframe{ 
         width: 90%;
         height: auto;
         aspect-ratio: 16 / 9;
     }
+
+
 
     
     .pad-top2{

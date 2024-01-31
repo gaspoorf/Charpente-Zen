@@ -39,7 +39,6 @@
 
     add_image_size('pictures-realisations-CMS', 380, 270, ['center', 'center']);
 
-    // add_get_logo('') modifier logo depuis apparance sur wdp
 
 
 
@@ -96,13 +95,16 @@
 
         // PAGE HOME CSS
         wp_enqueue_style('home-style', get_template_directory_uri() . '/css/page-home.css');
-
-        // PAGE CONTACT CSS
-        wp_enqueue_style('contact-style', get_template_directory_uri() . '/css/page-contact.css');
         
-        // PAGE ABOUT CSS
-        wp_enqueue_style('about-style', get_template_directory_uri() . '/css/page-about.css');
+        // PAGE CONTACT CSS
+        if (is_page('contact')) {
+            wp_enqueue_style('contact-style', get_template_directory_uri() . '/css/page-contact.css');
+        }
 
+        // PAGE ABOUT CSS
+        if (is_page('a-propos')) {
+            wp_enqueue_style('about-style', get_template_directory_uri() . '/css/page-about.css');
+        }
         // PAGE CMS CSS
         wp_enqueue_style('cms-style', get_template_directory_uri() . '/css/cms.css');
 
