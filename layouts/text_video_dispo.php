@@ -10,7 +10,7 @@ $video_id = get_youtube_video_id($video_url);
 
 ?>
 
-<div class="center gap2 pad3 <?php echo $content['text_video_choice']; ?>">
+<div class="center gap2 pad3 pad-bot <?php echo $content['text_video_choice']; ?>">
     <div class="video-cms">
         <?php 
             if ($video_id) {

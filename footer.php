@@ -26,7 +26,7 @@ $contact_phone = get_field('contact_phone', $contact_page_id);
             </div>
             <hr id="footer-hr">
             <div class="center footer-bottom">
-                <a href="#"><p class="p2">Charpente Zen ©2023</p></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('accueil'))); ?>"><p class="p2">Charpente Zen ©2023</p></a>
                 <p class="p2"> - </p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('mentions-legales'))); ?>"><p class="p2">Mentions légales</p></a>
             </div>

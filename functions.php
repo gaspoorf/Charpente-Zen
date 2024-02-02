@@ -36,7 +36,7 @@
 
     
 
-
+    //CMS
     add_image_size('pictures-realisations-CMS', 380, 270, ['center', 'center']);
 
 

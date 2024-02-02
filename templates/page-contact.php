@@ -83,8 +83,7 @@
         <div class="center pad-top1">
             <div class="p5 catch">
                 <p>
-                    Afin de traiter votre demande, CHARPENTE ZEN devra effectuer un traitement des données personnelles vous concernant. Les données sont conservées pendant 2 ans à compter de notre dernier contact et sont destinées exclusivement à CHARPENTE ZEN, elles ne seront pas transmises à des tiers.<br><br>
-                    Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification des données vous concernant, d’un droit d’opposition pour motifs légitimes, d’un droit à l’effacement des données. Vous disposez également d’un droit à la récupération et à la portabilité des données dans certains cas spécifiquement prévus par la loi. 
+                    Les données collectées vi ce formulaire ne seront pas revendues ou données à des entreprises tierces, elles sont destinées exclusivement à CHARPENTE ZEN.
                 </p>
             </div>
         </div>
