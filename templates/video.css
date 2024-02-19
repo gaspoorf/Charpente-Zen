@@ -1,0 +1,31 @@
+.hero {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-size: cover;
+}
+.hero_video,
+.hero iframe,
+.hero_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+}
+
+/* .hero iframe {
+  opacity: 0;
+} */
+
+.hero iframe.loaded {
+  opacity: 1;
+}
+
+

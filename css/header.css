@@ -2,6 +2,25 @@ html{
     margin: 0 !important;
 }
 
+/* loader */
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+.loader-text {
+    color: var(--dark-green);
+    font-size: 24px;
+}
+
 /* ---------- EMPECHER SCROLL QUAND MENU BURGER ---------- */
 .disable-scroll {
     overflow: hidden;
@@ -312,5 +331,6 @@ html{
     }
 
 }
+
 
 

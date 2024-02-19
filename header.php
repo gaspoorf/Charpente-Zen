@@ -9,23 +9,49 @@
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/Logo.ico" type="image/x-icon">
     </head>
     <body>
+        <script>
+            window.addEventListener('load', function() {
+            // Récupérer le loader
+            var loader = document.getElementById("loader");
+
+            // Ajouter la classe no-scroll au body
+            document.body.classList.add("disable-scroll");
+
+            // Masquer le loader après 0.5s
+            setTimeout(function() {
+                if (loader) {
+                    loader.style.display = "none";
+                    // Retirer la classe no-scroll du body
+                    document.body.classList.remove("disable-scroll");
+                }
+            }, 700); // 500 millisecondes (0.5s)
+        });
+        </script>
+
+    <div id="loader" class="loader">
+        <p class="loader-text">Chargement...</p>
+    </div>
+    
     <?php 
     $video_url = get_field('video_url');
-    $video_id = get_youtube_video_id($video_url);
-    $replace_image = get_field('replace_image');
     ?>
     <header>
         <?php if (is_page('accueil')) : ?>
             <div class="header-section">
                 <div>
                     <p class="center-text main-text">La construction bois par la confiance et la bonne humeur</p>
-                    <?php if ($video_id) { ?>
+                   
+                        
+                    <?php if ($video_url && wp_http_validate_url($video_url)) { ?>
                         <div class="hero" id="background-video">
-                            <div id="youtubeEmbed" class="hero_video" data-video-id="<?php echo ($video_id);?>"></div>
-                            <!-- Image de remplacement -->
-                            <img loading="lazy" class="hero_image loading-overlay" src="<?php echo($replace_image['sizes']['replace']); ?>"  height="100vh" width="100vh" alt="<?php echo($replace_image['alt']); ?>">
+                            <video class="hero_video" autoplay="" loop="" muted="" playsinline="" id="background-video-element">
+                                <source src="<?php echo esc_url($video_url); ?>" type="video/mp4" codecs="hvec">
+                                <source src="<?php echo esc_url($video_url); ?>" type="video/mp4">
+                            </video>
                             <div class="background-image shadow"></div>
                         </div>
+
+                        
                     <?php } else { ?>
                         <div class="hero" id="background-image">
                             <!-- Afficher l'image de remplacement si l'URL de la vidéo n'est pas valide ou n'existe pas -->
@@ -33,6 +59,9 @@
                             <div class="background-image shadow"></div>
                         </div>
                     <?php } ?>
+                    
+                      
+                    
                     <a href="#home">
                         <div class="green-arrow">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/circle.svg" alt="cercle" class="logo-down circle">

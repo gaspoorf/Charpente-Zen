@@ -74,6 +74,9 @@
         // RESET CSS
         wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
 
+        // FONT POPPINS CSS
+        wp_enqueue_style('poppins-style', get_template_directory_uri() . '/css/poppins.css');
+
         // MAIN CSS
         wp_enqueue_style('main-style', get_template_directory_uri() . '/css/style.css');
 
